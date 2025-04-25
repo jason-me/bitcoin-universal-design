@@ -1,0 +1,6 @@
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+title: "Designing for the Edges: Bitcoin Accessibility Guide"
+description: "How accessibility improves Bitcoin UX for all users"
