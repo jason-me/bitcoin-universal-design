@@ -7,6 +7,8 @@ description: "How accessibility improves Bitcoin UX for all users"
 
 color_scheme: dark
 
+permalink: pretty
+
 # --- ENVIRONMENT SWITCHING --- #
 # LOCAL: When running `bundle exec jekyll serve`, leave baseurl blank ("")
 # GITHUB PAGES: When pushing live, baseurl must match the repository name
