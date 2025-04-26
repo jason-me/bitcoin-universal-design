@@ -14,8 +14,8 @@ color_scheme: dark
 #baseurl: ""                 # ✅ Use this line for LOCAL
 baseurl: "/bitcoin-universal-design" # ✅ Use this line for GITHUB PAGES
 
-include:
-  - _includes/head_custom.html
+#include:
+#  - _includes/head_custom.html
 
 # --- CUSTOM STYLING --- #
 just_the_docs:
