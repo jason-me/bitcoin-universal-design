@@ -7,11 +7,20 @@ description: "How accessibility improves Bitcoin UX for all users"
 
 color_scheme: dark
 
-baseurl: "/bitcoin-universal-design" 
+# --- ENVIRONMENT SWITCHING --- #
+# LOCAL: When running `bundle exec jekyll serve`, leave baseurl blank ("")
+# GITHUB PAGES: When pushing live, baseurl must match the repository name
+# Comment/uncomment accordingly
+#baseurl: ""                 # ✅ Use this line for LOCAL
+baseurl: "/bitcoin-universal-design" # ✅ Use this line for GITHUB PAGES
 
+include:
+  - _includes/head_custom.html
+
+# --- CUSTOM STYLING --- #
 just_the_docs:
   custom_css:
-    - "assets/css/style.css" 
+    - "{{ site.baseurl }}/assets/css/style.css" # Always use {{ site.baseurl }} prefix
 
 search_enabled: true
 back_to_top: true
@@ -33,3 +42,4 @@ nav:
     url: /workshop
   - title: Resources
     url: /resources
+
