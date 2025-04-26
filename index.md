@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: default
 title: Home
 nav_order: 0
+permalink: /
 ---
 
 # Designing for the Edges: Bitcoin Accessibility Guide
