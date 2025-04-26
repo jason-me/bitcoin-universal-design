@@ -1,0 +1,41 @@
+/* 🛠 Force override link color in both content and sidebar nav */
+.main-content a,
+.nav-list a,
+a:visited {
+  color: #8cb4ff !important;
+  text-decoration: none;
+}
+
+.main-content a:hover,
+.nav-list a:hover {
+  color: #b3d1ff !important;
+  text-decoration: underline;
+}
+
+/* 🔍 Search input placeholder contrast */
+.search input::placeholder {
+  color: #a8b0bd !important;
+  opacity: 1 !important;
+}
+
+/* 📄 Improve general body text contrast */
+body,
+.main-content,
+.site-nav,
+.site-footer {
+  color: #edf0f5 !important;
+}
+
+/* 🔘 Primary button improvements */
+.btn,
+.btn-primary {
+  background-color: #8cb4ff !important;
+  border-color: #8cb4ff !important;
+  color: #000 !important;
+}
+
+/* 🎯 Improve keyboard focus ring visibility */
+:focus {
+  outline: 3px solid #8cb4ff !important;
+  outline-offset: 2px !important;
+}

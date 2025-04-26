@@ -1,0 +1,112 @@
+---
+---
+
+/* This is a direct CSS override approach that doesn't rely on theme importing */
+
+/* Improve link contrast */
+a {
+  color: #8cb4ff !important;
+}
+
+a:hover {
+  color: #b3d1ff !important;
+}
+
+/* Improve search placeholder contrast */
+.search-input::placeholder {
+  color: #a8b0bd !important;
+  opacity: 1 !important;
+}
+
+/* Improve body text contrast */
+body {
+  color: #edf0f5 !important;
+}
+
+/* Improve focus visibility */
+*:focus {
+  outline: 3px solid #8cb4ff !important;
+  outline-offset: 2px !important;
+}
+
+/* Improve button contrast */
+.btn-primary {
+  background-color: #8cb4ff !important;
+  color: #000 !important;
+}
+
+/* Improve nav contrast */
+.nav-list .nav-list-item .nav-list-link {
+    color: #8cb4ff !important;
+  }
+  
+  /* Improve code block contrast */
+  code {
+    color: #b3d1ff !important;
+    background-color: #1a1a1a !important;
+  }
+  
+  /* Fix layout width issue */
+  .main-content-wrap {
+    max-width: none !important;
+    width: 95% !important;
+  }
+  
+  /* Improve table contrast */
+  table {
+    color: #edf0f5 !important;
+  }
+  
+  /* Improve header contrast */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+  
+  /* Improve sidebar contrast */
+  .side-bar {
+    background-color: #1e1e2e !important;
+  }
+  
+  /* Improve search input contrast */
+  .search-input {
+    color: #ffffff !important;
+    background-color: #2a2a3a !important;
+  }
+
+  /* Fix width restrictions */
+.main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  .main-content-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .main-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Make sure side-bar doesn't restrict main content */
+  .side-bar {
+    width: 248px !important;
+    min-width: 248px !important;
+  }
+  
+  @media (min-width: 50rem) {
+    .main {
+      position: relative !important;
+      margin-left: 248px !important;
+      max-width: calc(100% - 248px) !important;
+    }
+  }
+  
+  /* Override any max-width settings in parent elements */
+  body > * {
+    max-width: none !important;
+  }

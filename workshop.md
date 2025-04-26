@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Workshop Guide
+nav_order: 3
 ---
 
 # Workshop Guide

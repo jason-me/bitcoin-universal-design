@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Core Principles
+nav_order: 1
 ---
 
 # Core Principles

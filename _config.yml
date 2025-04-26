@@ -1,6 +1,36 @@
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: just-the-docs/just-the-docs
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
 
-title: "Designing for the Edges: Bitcoin Accessibility Guide"
+title: "Bitcoin Accessibility Guide"
 description: "How accessibility improves Bitcoin UX for all users"
+
+color_scheme: dark
+
+include:
+  - _includes/head_custom.html
+
+just_the_docs:
+  custom_css:
+    - "assets/css/style.css"
+
+search_enabled: true
+back_to_top: true
+
+aux_links:
+  "View on GitHub":
+    - "https://github.com/jason-me/bitcoin-universal-design"
+
+nav:
+  - title: Home
+    url: /
+  - title: Core Principles
+    url: /principles
+  - title: Accessibility Features
+    url: /features
+  - title: Practical Examples
+    url: /examples
+  - title: Workshop Guide
+    url: /workshop
+  - title: Resources
+    url: /resources

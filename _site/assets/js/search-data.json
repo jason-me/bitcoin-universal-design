@@ -1,0 +1,233 @@
+{"0": {
+    "doc": "Practical Examples",
+    "title": "Practical Examples",
+    "content": "Below are specific applications of the “design for the edges” heuristic in Bitcoin applications: . ",
+    "url": "/examples.html",
+    
+    "relUrl": "/examples.html"
+  },"1": {
+    "doc": "Practical Examples",
+    "title": "1. Recovery Options",
+    "content": "Design for: Users who struggle with technical complexity or secure storage . Implementation: . | Seedless recovery options | Visual backups or mnemonic alternatives | Encrypted cloud sync with appropriate security measures | . Universal benefit: Reduces risk of permanent fund loss for all users while maintaining security . ",
+    "url": "/examples.html#1-recovery-options",
+    
+    "relUrl": "/examples.html#1-recovery-options"
+  },"2": {
+    "doc": "Practical Examples",
+    "title": "2. Transaction Clarity",
+    "content": "Design for: Users with cognitive disabilities or language barriers . Implementation: . | Plain-language transaction summaries (e.g., “Send” vs “Broadcast Raw TX”) | Visual representation of transaction impacts | Confirmation flows with clear explanations of consequences | . Universal benefit: Clearer understanding for everyone, fewer mistakes, faster mental processing . ",
+    "url": "/examples.html#2-transaction-clarity",
+    
+    "relUrl": "/examples.html#2-transaction-clarity"
+  },"3": {
+    "doc": "Practical Examples",
+    "title": "3. Privacy Options",
+    "content": "Design for: Users with varying technical comfort levels . Implementation: . | Privacy features that are on by default but explained clearly | Accessible explanations of concepts like address reuse | Visual indications of privacy status | . Universal benefit: Better privacy practices with appropriate knowledge for different contexts . ",
+    "url": "/examples.html#3-privacy-options",
+    
+    "relUrl": "/examples.html#3-privacy-options"
+  },"4": {
+    "doc": "Practical Examples",
+    "title": "4. Interface Design",
+    "content": "Design for: Users with vision or motor impairments . Implementation: . | High contrast modes and adjustable text sizes | Larger tap targets that reduce potential for errors | Keyboard navigation for power users and those with motor limitations | . Universal benefit: More accurate interactions, usable in more environments (bright sunlight, on the move) . ",
+    "url": "/examples.html#4-interface-design",
+    
+    "relUrl": "/examples.html#4-interface-design"
+  },"5": {
+    "doc": "Practical Examples",
+    "title": "5. Offline &amp; Low-Bandwidth Support",
+    "content": "Design for: Users in regions with poor connectivity . Implementation: . | Progressive web apps that work offline | Minimal data requirements for core functions | Alternative communication methods | . Universal benefit: More resilient applications, faster performance, better battery life . Workshop Materials → . ",
+    "url": "/examples.html#5-offline--low-bandwidth-support",
+    
+    "relUrl": "/examples.html#5-offline--low-bandwidth-support"
+  },"6": {
+    "doc": "Accessibility Features",
+    "title": "Accessibility Features for Bitcoin Applications",
+    "content": "The table below shows how accessibility features designed for specific users create benefits for everyone: . | Accessibility Feature | Who It Helps First | How It Helps Everyone | . | Captions &amp; Visual Alerts | Deaf or hard-of-hearing users | Quiet or noisy environments, faster information parsing | . | Voice Control / Keyboard Nav | Limited mobility | Hands-free convenience, power-user efficiency | . | High Contrast / Text Size | Vision impairments | Sunlight use, aging eyes, general readability | . | Simple UI &amp; Terminology | Cognitive impairments | Reduces mistakes, speeds up onboarding | . | Colorblind-friendly design | Colorblind users | Clearer risk states for everyone | . | Larger tap targets / gestures | Motor impairments | Fewer mis-taps on mobile, faster transactions | . | Offline &amp; Low-bandwidth Support | Remote or resource-constrained users | Global access, better performance everywhere | . ",
+    "url": "/features.html#accessibility-features-for-bitcoin-applications",
+    
+    "relUrl": "/features.html#accessibility-features-for-bitcoin-applications"
+  },"7": {
+    "doc": "Accessibility Features",
+    "title": "Implementation Guidelines",
+    "content": "1. Visual Accessibility . | Use sufficient contrast ratios (at least 4.5:1) | Don’t rely solely on color to convey information | Support text resizing without breaking layouts | Test with screen readers for semantic structure | . 2. Cognitive Accessibility . | Use clear, non-technical language | Provide contextual help and tooltips | Break complex processes into manageable steps | Use consistent patterns and visual cues | . 3. Motor Accessibility . | Ensure interactive elements are at least 44×44 pixels | Provide keyboard navigation options | Minimize the need for precise gestures | Include confirmation steps for irreversible actions | . 4. Hearing Accessibility . | Include visual alternatives to audio cues | Provide captions for video content | Use multiple notification methods | . 5. Situational Constraints . | Design for offline functionality | Optimize for low bandwidth | Consider environmental factors (sunlight, noise, distraction) | . See Real-World Examples → . ",
+    "url": "/features.html#implementation-guidelines",
+    
+    "relUrl": "/features.html#implementation-guidelines"
+  },"8": {
+    "doc": "Accessibility Features",
+    "title": "Accessibility Features",
+    "content": " ",
+    "url": "/features.html",
+    
+    "relUrl": "/features.html"
+  },"9": {
+    "doc": "Home",
+    "title": "Designing for the Edges: Bitcoin Accessibility Guide",
+    "content": " ",
+    "url": "/#designing-for-the-edges-bitcoin-accessibility-guide",
+    
+    "relUrl": "/#designing-for-the-edges-bitcoin-accessibility-guide"
+  },"10": {
+    "doc": "Home",
+    "title": "Core Heuristic",
+    "content": "“Designing for the extremes in human variation often improves usability for everyone.” . This guide explores how building for users with disabilities, impairments, or atypical environments leads to better Bitcoin experiences for everyone. In Bitcoin applications, where usability is frequently sacrificed for security or privacy, this heuristic helps create more thoughtful, human-centered products. ",
+    "url": "/#core-heuristic",
+    
+    "relUrl": "/#core-heuristic"
+  },"11": {
+    "doc": "Home",
+    "title": "Why Accessibility Matters for Bitcoin",
+    "content": ". | Mistakes are costly: Accessible design helps prevent user errors that can lead to irreversible loss of funds | Confidence through usability: Trustless systems gain credibility when all users can navigate them independently and successfully | Bad UX is a threat vector: Confusing or inaccessible interfaces increase the risk of mishandled keys, insecure backups, or theft of funds | Accessibility = Resilience: Tools that work across diverse abilities, devices, and environments are more robust and reliable | . ",
+    "url": "/#why-accessibility-matters-for-bitcoin",
+    
+    "relUrl": "/#why-accessibility-matters-for-bitcoin"
+  },"12": {
+    "doc": "Home",
+    "title": "Our Approach",
+    "content": "This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases - people with disabilities, people in resource-constrained environments, or those with limited technical knowledge - we create better experiences for all users. Get Started with Core Principles → . “Solve for one. Extend to many.” . ",
+    "url": "/#our-approach",
+    
+    "relUrl": "/#our-approach"
+  },"13": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"14": {
+    "doc": "Core Principles",
+    "title": "Core Principles",
+    "content": " ",
+    "url": "/principles.html",
+    
+    "relUrl": "/principles.html"
+  },"15": {
+    "doc": "Core Principles",
+    "title": "From Accommodation to Innovation",
+    "content": "Accessibility in Bitcoin design isn’t about adding features for a small minority - it’s about leveraging diverse human experiences to create more robust, usable systems for everyone. ",
+    "url": "/principles.html#from-accommodation-to-innovation",
+    
+    "relUrl": "/principles.html#from-accommodation-to-innovation"
+  },"16": {
+    "doc": "Core Principles",
+    "title": "Security Through Accessibility",
+    "content": "In Bitcoin applications, poor usability isn’t just inconvenient - it’s dangerous. When we design for users at the margins: . | We reduce the likelihood of catastrophic errors | We make security features more understandable and therefore more effective | We create resilient systems that work across diverse contexts | . ",
+    "url": "/principles.html#security-through-accessibility",
+    
+    "relUrl": "/principles.html#security-through-accessibility"
+  },"17": {
+    "doc": "Core Principles",
+    "title": "Design Philosophy Shift",
+    "content": "| Traditional Approach | Edge-Driven Approach | . | Design for the “average user” | Recognize there is no average user | . | Add accessibility features later | Start with the most constrained use cases | . | Security over usability | Security through usability | . | “Edge cases” as exceptions | “Edge cases” as insights | . ",
+    "url": "/principles.html#design-philosophy-shift",
+    
+    "relUrl": "/principles.html#design-philosophy-shift"
+  },"18": {
+    "doc": "Core Principles",
+    "title": "The Cost of Inaccessibility",
+    "content": "In Bitcoin applications, inaccessible design has serious consequences: . | Financial: Lost funds due to confusion or errors | Adoption: Barriers that prevent widespread use | Trust: Systems that feel risky or confusing | Equity: Tools that only work for technically-savvy users | . Explore Accessibility Features → . ",
+    "url": "/principles.html#the-cost-of-inaccessibility",
+    
+    "relUrl": "/principles.html#the-cost-of-inaccessibility"
+  },"19": {
+    "doc": "Resources",
+    "title": "Resources",
+    "content": " ",
+    "url": "/resources.html",
+    
+    "relUrl": "/resources.html"
+  },"20": {
+    "doc": "Resources",
+    "title": "Standards &amp; Guidelines",
+    "content": ". | WCAG 2.2 Quick Reference - Official success criteria and techniques | Accessible Design Principles - Key concepts from W3C | Bitcoin Design Guide - Community resource for Bitcoin UX | . ",
+    "url": "/resources.html#standards--guidelines",
+    
+    "relUrl": "/resources.html#standards--guidelines"
+  },"21": {
+    "doc": "Resources",
+    "title": "Assistive Technologies to Be Aware Of",
+    "content": "Screen Readers . | NVDA (Windows) - Free screen reader for Windows | VoiceOver - Built into macOS and iOS | JAWS - Professional screen reader for Windows | . Other Assistive Tech . | Screen Magnifiers: ZoomText, browser zoom tools | Speech Input: Dragon NaturallySpeaking, native voice control on mobile | Alternative Input Devices: Switch controls, eye tracking, keyboard-only setups | . ",
+    "url": "/resources.html#assistive-technologies-to-be-aware-of",
+    
+    "relUrl": "/resources.html#assistive-technologies-to-be-aware-of"
+  },"22": {
+    "doc": "Resources",
+    "title": "Testing Tools",
+    "content": ". | axe DevTools - In-browser accessibility scanner | WAVE - WebAIM’s accessibility evaluation tool | Lighthouse - Google Chrome DevTools audit | Accessibility Insights - Microsoft’s suite for web and Windows apps | . ",
+    "url": "/resources.html#testing-tools",
+    
+    "relUrl": "/resources.html#testing-tools"
+  },"23": {
+    "doc": "Resources",
+    "title": "Bitcoin-Specific Resources",
+    "content": ". | Open Bitcoin Design Community | Bitcoin UI Kit | Bitcoin Wallet Interaction Model | . ",
+    "url": "/resources.html#bitcoin-specific-resources",
+    
+    "relUrl": "/resources.html#bitcoin-specific-resources"
+  },"24": {
+    "doc": "Resources",
+    "title": "Recommended Reading",
+    "content": ". | “Universal Design for Web Applications” by Wendy Chisholm &amp; Matt May | “Inclusive Design Patterns” by Heydon Pickering | “Design for Real Life” by Eric Meyer &amp; Sara Wachter-Boettcher | . ",
+    "url": "/resources.html#recommended-reading",
+    
+    "relUrl": "/resources.html#recommended-reading"
+  },"25": {
+    "doc": "Resources",
+    "title": "Communities",
+    "content": ". | Bitcoin Design Community | A11Y Project | Inclusive Design 24 | . ",
+    "url": "/resources.html#communities",
+    
+    "relUrl": "/resources.html#communities"
+  },"26": {
+    "doc": "Resources",
+    "title": "Contact",
+    "content": "If you’d like to contribute to this guide or have questions about implementing these principles, please open an issue or contact us at your-email@example.com. ",
+    "url": "/resources.html#contact",
+    
+    "relUrl": "/resources.html#contact"
+  },"27": {
+    "doc": "Workshop Guide",
+    "title": "Workshop Guide",
+    "content": "The following materials can be used to run a workshop or hackathon focused on accessible Bitcoin application design. ",
+    "url": "/workshop.html",
+    
+    "relUrl": "/workshop.html"
+  },"28": {
+    "doc": "Workshop Guide",
+    "title": "Workshop Structure (3 hours)",
+    "content": "1. Introduction (30 min) . | Present the core heuristic | Review why accessibility matters for Bitcoin | Share examples of universal design benefits | . 2. Persona Development (45 min) . Have teams develop personas that represent users at the “edges”: . | A person with low vision using a screen reader | Someone in a region with intermittent internet access | An older adult with limited technical experience | A person with motor impairments using keyboard navigation | . 3. Design Challenge (60 min) . Ask teams to redesign a common Bitcoin wallet function for their persona: . | Wallet backup and recovery | Sending a transaction | Managing multiple accounts | Setting security preferences | . 4. Present &amp; Critique (45 min) . Teams present their designs, focusing on: . | How the design solves for the specific user | How the solution improves UX for everyone | Any trade-offs they had to navigate | . ",
+    "url": "/workshop.html#workshop-structure-3-hours",
+    
+    "relUrl": "/workshop.html#workshop-structure-3-hours"
+  },"29": {
+    "doc": "Workshop Guide",
+    "title": "Hackathon Challenge",
+    "content": "For a longer format hackathon, challenge teams to create accessible Bitcoin tools focusing on one of these areas: . | Accessible Onboarding: Create an onboarding flow that works for users with diverse needs | Universal Recovery: Design a wallet recovery system that doesn’t rely on technical knowledge | Cross-Context Transactions: Build a transaction flow that works across different environments and abilities | Security Through Clarity: Create security features that are understandable to all users | . ",
+    "url": "/workshop.html#hackathon-challenge",
+    
+    "relUrl": "/workshop.html#hackathon-challenge"
+  },"30": {
+    "doc": "Workshop Guide",
+    "title": "Evaluation Criteria",
+    "content": "Score projects based on: . | Inclusivity: How well does it address the needs of users at the margins? | Universal Benefit: How does solving for edge cases improve the experience for everyone? | Technical Feasibility: Can it be implemented while maintaining Bitcoin’s security properties? | Innovation: Does it take a novel approach to solving accessibility challenges? | . ",
+    "url": "/workshop.html#evaluation-criteria",
+    
+    "relUrl": "/workshop.html#evaluation-criteria"
+  },"31": {
+    "doc": "Workshop Guide",
+    "title": "Takeaways for Teams",
+    "content": ". | Test with edge-case users (or personas): new to Bitcoin, older, colorblind, screen reader users | Treat usability as security armor | Ask: “If this design was the only thing standing between someone and losing their life savings, would it hold up?” | Make your tools survivable, not just functional | . ",
+    "url": "/workshop.html#takeaways-for-teams",
+    
+    "relUrl": "/workshop.html#takeaways-for-teams"
+  },"32": {
+    "doc": "Workshop Guide",
+    "title": "Slogan to Remember",
+    "content": "Solve for one. Extend to many. Additional Resources → . ",
+    "url": "/workshop.html#slogan-to-remember",
+    
+    "relUrl": "/workshop.html#slogan-to-remember"
+  }
+}

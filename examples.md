@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Practical Examples
+nav_order: 2
 ---
 
 # Practical Examples
