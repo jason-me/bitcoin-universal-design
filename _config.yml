@@ -2,7 +2,7 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
 
-title: "Bitcoin Accessibility Guide"
+title: "Accessibility Guide"
 description: "How accessibility improves Bitcoin UX for all users"
 
 color_scheme: dark
@@ -10,9 +10,10 @@ color_scheme: dark
 include:
   - _includes/head_custom.html
 
+
 just_the_docs:
   custom_css:
-    - "assets/css/style.css"
+    - "/assets/css/style.css"
 
 search_enabled: true
 back_to_top: true

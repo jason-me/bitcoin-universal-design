@@ -1,5 +1,6 @@
 ---
 ---
+@charset "utf-8";
 
 /* This is a direct CSS override approach that doesn't rely on theme importing */
 
@@ -110,3 +111,63 @@ body {
   body > * {
     max-width: none !important;
   }
+
+/* 🔍 Improve search results dropdown contrast */
+.search-results {
+    background-color: #1e1e2e !important;
+    border: 1px solid #8cb4ff !important;
+  }
+  
+  .search-result {
+    color: #edf0f5 !important;
+  }
+  
+  .search-result:hover {
+    background-color: #2a2a3a !important;
+  }
+  
+  .search-result-title {
+    color: #8cb4ff !important;
+  }
+  
+  .search-result-doc {
+    color: #edf0f5 !important;
+  }
+  
+  .search-results .search-result-doc-title {
+    color: #edf0f5 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+  }
+  
+  .search-result-rel-url {
+    color: #8cb4ff !important;
+  }
+/* 🎯 Fix Bitcoin Accessibility Guide title sizing */
+.site-title {
+    white-space: normal !important; /* allow wrapping if needed */
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    font-size: 1.05rem !important; /* smaller than 1.25rem */
+    line-height: 1.2 !important; /* tighten line spacing */
+    max-width: 100% !important;
+    display: flex !important; /* so logo and text are side-by-side */
+    align-items: center !important; /* center vertically */
+}
+
+/* 🛠 Add logo before site title and shrink it slightly */
+.site-title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("/assets/images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px; /* smaller than 50px */
+    height: 36px;
+    margin-right: 0.5rem;
+    filter: invert(100%); /* works for dark mode */
+}
+
+  

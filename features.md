@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accessibility Features
-nav_order: 1
+nav_order: 2
 ---
 
 # Accessibility Features for Bitcoin Applications

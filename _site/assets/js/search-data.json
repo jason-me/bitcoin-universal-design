@@ -99,7 +99,7 @@
   },"14": {
     "doc": "Core Principles",
     "title": "Core Principles",
-    "content": " ",
+    "content": "The principles of accessible Bitcoin design are founded on the recognition that designing for edge cases creates more robust systems for everyone. ",
     "url": "/principles.html",
     
     "relUrl": "/principles.html"
@@ -112,25 +112,25 @@
     "relUrl": "/principles.html#from-accommodation-to-innovation"
   },"16": {
     "doc": "Core Principles",
+    "title": "WCAG POUR Principles",
+    "content": "The Web Content Accessibility Guidelines (WCAG) 2.2 establishes four essential principles that form the foundation of accessible design, known as POUR: . Perceivable . Users must be able to perceive all information and interface elements through at least one of their senses. This means providing text alternatives for non-text content, captions for audio, and ensuring content can be presented in different ways without losing meaning or structure. Operable . All interface components and navigation must be operable by all users, regardless of how they interact with technology. This includes ensuring keyboard accessibility, giving users sufficient time to read and use content, avoiding designs that could cause physical reactions, and providing clear wayfinding throughout the interface. Understandable . Information and interface operation must be understandable to all users. Content should be readable, interfaces should work in predictable ways, and systems should help users avoid and correct mistakes—especially important in Bitcoin applications where errors can have significant consequences. Robust . Content must be robust enough to be reliably interpreted by a wide range of user agents and assistive technologies, both current and future. This requires clean code that follows standards and is compatible with evolving tools and technologies. These principles align perfectly with Bitcoin design needs - creating interfaces that all users can perceive, operate, understand, and access using diverse tools. ",
+    "url": "/principles.html#wcag-pour-principles",
+    
+    "relUrl": "/principles.html#wcag-pour-principles"
+  },"17": {
+    "doc": "Core Principles",
     "title": "Security Through Accessibility",
     "content": "In Bitcoin applications, poor usability isn’t just inconvenient - it’s dangerous. When we design for users at the margins: . | We reduce the likelihood of catastrophic errors | We make security features more understandable and therefore more effective | We create resilient systems that work across diverse contexts | . ",
     "url": "/principles.html#security-through-accessibility",
     
     "relUrl": "/principles.html#security-through-accessibility"
-  },"17": {
+  },"18": {
     "doc": "Core Principles",
     "title": "Design Philosophy Shift",
-    "content": "| Traditional Approach | Edge-Driven Approach | . | Design for the “average user” | Recognize there is no average user | . | Add accessibility features later | Start with the most constrained use cases | . | Security over usability | Security through usability | . | “Edge cases” as exceptions | “Edge cases” as insights | . ",
+    "content": "| Traditional Approach | Edge-Driven Approach | . | Design for the “average user” | Recognize there is no average user | . | Add accessibility features later | Start with the most constrained use cases | . | Security over usability | Security through usability | . | “Edge cases” as exceptions | “Edge cases” as insights | . Next: Accessibility Features . ",
     "url": "/principles.html#design-philosophy-shift",
     
     "relUrl": "/principles.html#design-philosophy-shift"
-  },"18": {
-    "doc": "Core Principles",
-    "title": "The Cost of Inaccessibility",
-    "content": "In Bitcoin applications, inaccessible design has serious consequences: . | Financial: Lost funds due to confusion or errors | Adoption: Barriers that prevent widespread use | Trust: Systems that feel risky or confusing | Equity: Tools that only work for technically-savvy users | . Explore Accessibility Features → . ",
-    "url": "/principles.html#the-cost-of-inaccessibility",
-    
-    "relUrl": "/principles.html#the-cost-of-inaccessibility"
   },"19": {
     "doc": "Resources",
     "title": "Resources",
