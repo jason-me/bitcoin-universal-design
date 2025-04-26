@@ -16,7 +16,7 @@ include:
 
 just_the_docs:
   custom_css:
-    - "/assets/css/style.css"
+    - "assets/css/style.css"
 
 search_enabled: true
 back_to_top: true
