@@ -35,15 +35,15 @@ nav:
   - title: Home
     url: /index.html
   - title: Core Principles
-    url: /principles
+    url: /principles.html
   - title: Accessibility Features
-    url: /features
+    url: /features.html
   - title: Practical Examples
-    url: /examples
+    url: /examples.html
   - title: Workshop Guide
-    url: /workshop
+    url: /workshop.html
   - title: Resources
-    url: /resources
+    url: /resources.html
 
 
 # Force rebuild: updated 2025-04-25
