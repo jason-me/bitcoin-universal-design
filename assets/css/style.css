@@ -133,7 +133,7 @@ body > * {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  background-image: url("/assets/images/logo.svg");
+  background-image: url("{{ site.baseurl }}/assets/images/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
