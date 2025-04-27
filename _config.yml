@@ -7,7 +7,7 @@ description: "How accessibility improves Bitcoin UX for all users"
 
 color_scheme: dark
 
-#permalink: pretty
+permalink: pretty
 
 # --- ENVIRONMENT SWITCHING --- #
 # LOCAL: When running `bundle exec jekyll serve`, leave baseurl blank ("")
@@ -33,17 +33,17 @@ aux_links:
 
 nav:
   - title: Home
-    url: /index.html
+    url: /index/
   - title: Core Principles
-    url: /principles.html
+    url: /principles/
   - title: Accessibility Features
-    url: /features.html
+    url: /features/
   - title: Practical Examples
-    url: /examples.html
+    url: /examples/
   - title: Workshop Guide
-    url: /workshop.html
+    url: /workshop/
   - title: Resources
-    url: /resources.html
+    url: /resources/
 
 
 # Force rebuild: updated 2025-04-25
