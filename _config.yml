@@ -22,7 +22,7 @@ baseurl: "/bitcoin-universal-design" # ✅ Use this line for GITHUB PAGES
 # --- CUSTOM STYLING --- #
 just_the_docs:
   custom_css:
-    - "{{ site.baseurl }}/assets/css/style.css" # Always use {{ site.baseurl }} prefix
+    - "assets/css/style.css" # Always use {{ site.baseurl }} prefix
 
 search_enabled: true
 back_to_top: true
