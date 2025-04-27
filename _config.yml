@@ -33,7 +33,7 @@ aux_links:
 
 nav:
   - title: Home
-    url: /
+    url: /index.html
   - title: Core Principles
     url: /principles
   - title: Accessibility Features
@@ -44,5 +44,6 @@ nav:
     url: /workshop
   - title: Resources
     url: /resources
+
 
 # Force rebuild: updated 2025-04-25
