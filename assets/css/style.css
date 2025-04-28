@@ -1,62 +1,131 @@
-/*
-Error: Invalid CSS after "#": expected id name, was ".site-title::be..."
-        on line 157 of assets/css/style.scss
+@charset "UTF-8";
+/* This is a direct CSS override approach that doesn't rely on theme importing */
+/* Improve link contrast */
+a {
+  color: #8cb4ff !important; }
 
-152:     display: flex !important; /* so logo and text are side-by-side *\/
-153:     align-items: center !important; /* center vertically *\/
-154: }
-155: 
-156: /* 🛠 Add logo before site title and shrink it slightly *\/
-157: #.site-title::before {
-158:     content: "";
-159:     display: inline-block;
-160:     vertical-align: middle;
-161:     background-image: url("/bitcoin-universal-design/assets/images/logo.svg");
-162:     background-size: contain;
+a:hover {
+  color: #b3d1ff !important; }
 
-Backtrace:
-assets/css/style.scss:157
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1105:in `name!'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:200:in `id_selector'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:156:in `simple_selector_sequence'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:108:in `selector'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:83:in `selector_comma_sequence'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Users/jhester/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/Users/jhester/.rbenv/versions/3.2.2/bin/sass:25:in `load'
-/Users/jhester/.rbenv/versions/3.2.2/bin/sass:25:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"#\": expected id name, was \".site-title::be...\"\A         on line 157 of assets/css/style.scss\A \A 152:     display: flex !important; /* so logo and text are side-by-side */\A 153:     align-items: center !important; /* center vertically */\A 154: }\A 155: \A 156: /* 🛠 Add logo before site title and shrink it slightly */\A 157: #.site-title::before {\A 158:     content: \"\";\A 159:     display: inline-block;\A 160:     vertical-align: middle;\A 161:     background-image: url(\"/bitcoin-universal-design/assets/images/logo.svg\");\A 162:     background-size: contain;"; }
+/* Improve search placeholder contrast */
+.search-input::placeholder {
+  color: #a8b0bd !important;
+  opacity: 1 !important; }
+
+/* Improve body text contrast */
+body {
+  color: #edf0f5 !important; }
+
+/* Improve focus visibility */
+*:focus {
+  outline: 3px solid #8cb4ff !important;
+  outline-offset: 2px !important; }
+
+/* Improve button contrast */
+.btn-primary {
+  background-color: #8cb4ff !important;
+  color: #000 !important; }
+
+/* Improve nav contrast */
+.nav-list .nav-list-item .nav-list-link {
+  color: #8cb4ff !important; }
+
+/* Improve code block contrast */
+code {
+  color: #b3d1ff !important;
+  background-color: #1a1a1a !important; }
+
+/* Fix layout width issue */
+.main-content-wrap {
+  max-width: none !important;
+  width: 95% !important; }
+
+/* Improve table contrast */
+table {
+  color: #edf0f5 !important; }
+
+/* Improve header contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important; }
+
+/* Improve sidebar contrast */
+.side-bar {
+  background-color: #1e1e2e !important; }
+
+/* Improve search input contrast */
+.search-input {
+  color: #ffffff !important;
+  background-color: #2a2a3a !important; }
+
+/* Fix width restrictions */
+.main {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important; }
+
+.main-content-wrap {
+  width: 100% !important;
+  max-width: 100% !important; }
+
+.main-content {
+  width: 90% !important;
+  max-width: 90% !important;
+  margin: 0 auto !important; }
+
+/* Make sure side-bar doesn't restrict main content */
+.side-bar {
+  width: 248px !important;
+  min-width: 248px !important; }
+
+@media (min-width: 50rem) {
+  .main {
+    position: relative !important;
+    margin-left: 248px !important;
+    max-width: calc(100% - 248px) !important; } }
+/* Override any max-width settings in parent elements */
+body > * {
+  max-width: none !important; }
+
+/* 🔍 Improve search results dropdown contrast */
+.search-results {
+  background-color: #1e1e2e !important;
+  border: 1px solid #8cb4ff !important; }
+
+.search-result {
+  color: #edf0f5 !important; }
+
+.search-result:hover {
+  background-color: #2a2a3a !important; }
+
+.search-result-title {
+  color: #8cb4ff !important; }
+
+.search-result-doc {
+  color: #edf0f5 !important; }
+
+.search-results .search-result-doc-title {
+  color: #edf0f5 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important; }
+
+.search-result-rel-url {
+  color: #8cb4ff !important; }
+
+/* 🎯 Fix Bitcoin Accessibility Guide title sizing */
+.site-title {
+  white-space: normal !important;
+  /* allow wrapping if needed */
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  font-size: 1.05rem !important;
+  /* smaller than 1.25rem */
+  line-height: 1.2 !important;
+  /* tighten line spacing */
+  max-width: 100% !important;
+  display: flex !important;
+  /* so logo and text are side-by-side */
+  align-items: center !important;
+  /* center vertically */ }
+
+/*# sourceMappingURL=style.css.map */

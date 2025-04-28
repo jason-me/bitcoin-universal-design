@@ -153,19 +153,19 @@ body {
     align-items: center !important; /* center vertically */
 }
 
-/* 🛠 Add logo before site title and shrink it slightly */
-#.site-title::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url("/bitcoin-universal-design/assets/images/logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 36px; /* smaller than 50px */
-    height: 36px;
-    margin-right: 0.5rem;
-    filter: invert(100%); /* works for dark mode */
-}
+// 🛠 Add logo before site title and shrink it slightly
+// .site-title::before {
+//     content: "";
+//     display: inline-block;
+//     vertical-align: middle;
+//     background-image: url("/bitcoin-universal-design/assets/images/logo.svg");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 36px; // smaller than 50px
+//     height: 36px;
+//     margin-right: 0.5rem;
+//     filter: invert(100%); // works for dark mode
+// }
 
   
