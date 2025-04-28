@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButton = document.getElementById("menu-button");
+  const nav = document.getElementById("site-nav");
+
+  if (menuButton && nav) {
+    // Fix attributes
+    menuButton.setAttribute("aria-label", "Menu");
+    menuButton.setAttribute("aria-controls", "site-nav");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.removeAttribute("aria-pressed");
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById('menu-button');
   const siteNav = document.getElementById('site-nav');
@@ -45,3 +56,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
