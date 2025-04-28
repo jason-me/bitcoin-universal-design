@@ -128,4 +128,10 @@ body > * {
   align-items: center !important;
   /* center vertically */ }
 
+/* Highlight active nav link */
+.nav-list-link.active,
+.nav-list-link[aria-current="page"] {
+  font-weight: bold !important;
+  text-decoration: underline !important; }
+
 /*# sourceMappingURL=style.css.map */
