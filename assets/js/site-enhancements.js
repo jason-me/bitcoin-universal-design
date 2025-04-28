@@ -35,17 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function openMenu() {
       menuButton.setAttribute('aria-expanded', 'true');
+      menuButton.removeAttribute('aria-pressed'); // 🛑 force remove every time
       siteNav.hidden = false;
       menuButton.classList.add('nav-open');
       siteNav.classList.add('nav-open');
     }
-
+    
     function closeMenu() {
       menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.removeAttribute('aria-pressed'); // 🛑 force remove every time
       siteNav.hidden = true;
       menuButton.classList.remove('nav-open');
       siteNav.classList.remove('nav-open');
-    }
+    }    
 
     menuButton.addEventListener('click', function (event) {
       event.stopImmediatePropagation(); // 🛑 PREVENT Just the Docs from handling it
