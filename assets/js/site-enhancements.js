@@ -11,14 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
       siteTitle.prepend(logo);
     }
 
- // Set aria-current="page" on the active nav link
- const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
- const navLinks = document.querySelectorAll('.nav-list-link');
-
- navLinks.forEach(link => {
-   const linkPath = link.getAttribute('href').replace(/\/$/, "");
-   if (linkPath === currentPath) {
-     link.setAttribute('aria-current', 'page');
-   }
- });
-});
+  // Aria-current enhancement (fixed for missing hrefs)
+  const links = document.querySelectorAll('.nav-list a');
+  links.forEach(link => {
+    const parentLi = link.closest('li');
+    if (parentLi && parentLi.classList.contains('active')) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
