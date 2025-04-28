@@ -21,47 +21,49 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
- // Hamburger Menu Fix
- const menuButton = document.getElementById('menu-button');
- const siteNav = document.getElementById('site-nav');
+  // Hamburger Menu Accessibility Fix
+  const menuButton = document.getElementById('menu-button');
+  const siteNav = document.getElementById('site-nav');
 
- if (menuButton && siteNav) {
-   menuButton.setAttribute('aria-controls', 'site-nav');
-   menuButton.setAttribute('aria-expanded', 'false');
-   menuButton.removeAttribute('aria-pressed');
-   siteNav.hidden = true; // Start hidden
+  if (menuButton && siteNav) {
+    menuButton.setAttribute('aria-controls', 'site-nav');
+    menuButton.setAttribute('aria-expanded', 'false');
+    setTimeout(() => {
+      menuButton.removeAttribute('aria-pressed');
+    }, 0); // Delay to ensure DOM is fully ready
+    siteNav.hidden = true;
 
-   function openMenu() {
-     menuButton.setAttribute('aria-expanded', 'true');
-     siteNav.hidden = false;
-     menuButton.classList.add('nav-open');
-     siteNav.classList.add('nav-open');
-   }
+    function openMenu() {
+      menuButton.setAttribute('aria-expanded', 'true');
+      siteNav.hidden = false;
+      menuButton.classList.add('nav-open');
+      siteNav.classList.add('nav-open');
+    }
 
-   function closeMenu() {
-     menuButton.setAttribute('aria-expanded', 'false');
-     siteNav.hidden = true;
-     menuButton.classList.remove('nav-open');
-     siteNav.classList.remove('nav-open');
-   }
+    function closeMenu() {
+      menuButton.setAttribute('aria-expanded', 'false');
+      siteNav.hidden = true;
+      menuButton.classList.remove('nav-open');
+      siteNav.classList.remove('nav-open');
+    }
 
-   menuButton.addEventListener('click', function () {
-     const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-     if (expanded) {
-       closeMenu();
-     } else {
-       openMenu();
-     }
-   });
+    menuButton.addEventListener('click', function () {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+      if (expanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
 
-   document.addEventListener('keydown', function (event) {
-     if (event.key === 'Escape') {
-       const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-       if (expanded) {
-         closeMenu();
-         menuButton.focus();
-       }
-     }
-   });
- }
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+          closeMenu();
+          menuButton.focus();
+        }
+      }
+    });
+  }
 });
