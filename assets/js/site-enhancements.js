@@ -26,17 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
   const nav = document.getElementById("site-nav");
 
   if (menuButton && nav) {
-    // Fix existing button attributes
+    // Fix attributes
     menuButton.setAttribute("aria-label", "Menu");
     menuButton.setAttribute("aria-controls", "site-nav");
     menuButton.setAttribute("aria-expanded", "false");
     menuButton.removeAttribute("aria-pressed");
 
-    // Add toggle behavior
+    // Toggle menu open/close
     menuButton.addEventListener("click", function() {
       const expanded = menuButton.getAttribute("aria-expanded") === "true";
       menuButton.setAttribute("aria-expanded", (!expanded).toString());
       nav.classList.toggle("open");
     });
+
+    // Listen for Escape key to close menu
+    document.addEventListener("keydown", function(event) {
+      const expanded = menuButton.getAttribute("aria-expanded") === "true";
+
+      if (event.key === "Escape" && expanded) {
+        menuButton.setAttribute("aria-expanded", "false");
+        nav.classList.remove("open");
+        menuButton.focus(); // Optional: Return focus to the button
+      }
+    });
   }
 });
+
