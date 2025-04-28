@@ -72,40 +72,51 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
+// Enhance Search Combobox Accessibility
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results'); // NOT the UL directly
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResultsList) {
-    // Setup combobox roles/attributes
+  if (searchInput && searchResults && searchResultsList) {
+    // Setup combobox attributes
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-autocomplete', 'list');
     searchInput.setAttribute('aria-expanded', 'false');
-    searchInput.setAttribute('aria-controls', 'search-results-list');
+    searchInput.setAttribute('aria-controls', 'search-results-list'); // Target the UL
 
-    // Setup listbox
+    // Setup UL listbox
     searchResultsList.setAttribute('role', 'listbox');
-    searchResultsList.setAttribute('id', 'search-results-list');
+    searchResultsList.setAttribute('id', 'search-results-list'); // ID for aria-controls to match
 
-    // Listen for input typing to open/close the list
-    searchInput.addEventListener('input', function () {
-      const hasResults = searchResultsList.children.length > 0;
-      searchInput.setAttribute('aria-expanded', hasResults ? 'true' : 'false');
-    });
+    // Show/hide aria-expanded dynamically based on visible results
+    function updateAriaExpanded() {
+      const visible = searchResults.offsetHeight > 0 && searchResults.style.display !== 'none';
+      searchInput.setAttribute('aria-expanded', visible ? 'true' : 'false');
+    }
 
-    // Also ensure each result item gets role="option"
-    const observer = new MutationObserver(function (mutationsList) {
+    // Listen to typing
+    searchInput.addEventListener('input', updateAriaExpanded);
+
+    // Also monitor DOM changes to update aria-expanded
+    const observer = new MutationObserver(updateAriaExpanded);
+    observer.observe(searchResults, { attributes: true, childList: true, subtree: true });
+
+    // Setup role="option" on search results
+    const itemObserver = new MutationObserver(function (mutationsList) {
       for (let mutation of mutationsList) {
         if (mutation.type === 'childList') {
           mutation.addedNodes.forEach(node => {
-            if (node.nodeType === 1 && node.matches('li')) {
-              node.setAttribute('role', 'option');
+            if (node.nodeType === 1) {
+              const link = node.querySelector('a.search-result');
+              if (link) {
+                link.setAttribute('role', 'option');
+              }
             }
           });
         }
       }
     });
-
-    observer.observe(searchResultsList, { childList: true });
+    itemObserver.observe(searchResultsList, { childList: true });
   }
 });
