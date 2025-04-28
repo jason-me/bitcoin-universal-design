@@ -47,14 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
       siteNav.classList.remove('nav-open');
     }
 
-    menuButton.addEventListener('click', function () {
+    menuButton.addEventListener('click', function (event) {
+      event.stopImmediatePropagation(); // 🛑 PREVENT Just the Docs from handling it
       const expanded = menuButton.getAttribute('aria-expanded') === 'true';
       if (expanded) {
         closeMenu();
       } else {
         openMenu();
       }
-    });
+    });    
 
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
