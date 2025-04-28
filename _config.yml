@@ -18,7 +18,7 @@ baseurl: "/bitcoin-universal-design" # ✅ Use this line for GITHUB PAGES
 
 include:
   - _includes/head_custom.html
-  - _includes/site-header.html
+ # - _includes/site-header.html
 
 # --- CUSTOM STYLING --- #
 just_the_docs:

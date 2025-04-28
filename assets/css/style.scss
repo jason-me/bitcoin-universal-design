@@ -154,7 +154,7 @@ body {
 }
 
 /* 🛠 Add logo before site title and shrink it slightly */
-.site-title::before {
+#.site-title::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
