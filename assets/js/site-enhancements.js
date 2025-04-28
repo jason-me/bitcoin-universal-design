@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. Inject Logo
+  // Inject Logo
   const siteTitle = document.querySelector('.site-title');
   if (siteTitle) {
     const logo = document.createElement('img');
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     siteTitle.prepend(logo);
   }
 
-  // 2. Enhance aria-current for active links
+  // Enhance aria-current
   const links = document.querySelectorAll('.nav-list a');
   links.forEach(link => {
     const parentLi = link.closest('li');
@@ -21,29 +21,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // 3. Improve Hamburger Menu Accessibility
+  // Hamburger menu
   const menuButton = document.getElementById("menu-button");
   const siteNav = document.getElementById("site-nav");
 
   if (menuButton && siteNav) {
-    // Initial setup
+    // Initialize correct state
     menuButton.setAttribute("aria-label", "Menu");
     menuButton.setAttribute("aria-controls", "site-nav");
     menuButton.setAttribute("aria-expanded", "false");
     menuButton.removeAttribute("aria-pressed");
+    siteNav.hidden = true;
+
+    function openMenu() {
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.removeAttribute("aria-pressed");
+      siteNav.hidden = false;
+      menuButton.classList.add("nav-open");
+    }
+
+    function closeMenu() {
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.removeAttribute("aria-pressed");
+      siteNav.hidden = true;
+      menuButton.classList.remove("nav-open");
+    }
 
     menuButton.addEventListener('click', function () {
       const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', (!expanded).toString());
-      siteNav.hidden = expanded; // true hides, false shows
+      if (expanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
-    // ESC closes menu
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         if (menuButton.getAttribute('aria-expanded') === 'true') {
-          menuButton.setAttribute('aria-expanded', 'false');
-          siteNav.hidden = true;
+          closeMenu();
+          menuButton.focus(); // Return focus to button
         }
       }
     });
