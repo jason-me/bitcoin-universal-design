@@ -10,5 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
       logo.style.filter = "invert(100%)"; // Invert for dark background
       siteTitle.prepend(logo);
     }
-  });
-  
+
+ // Set aria-current="page" on the active nav link
+ const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
+ const navLinks = document.querySelectorAll('.nav-list-link');
+
+ navLinks.forEach(link => {
+   const linkPath = link.getAttribute('href').replace(/\/$/, "");
+   if (linkPath === currentPath) {
+     link.setAttribute('aria-current', 'page');
+   }
+ });
+});
