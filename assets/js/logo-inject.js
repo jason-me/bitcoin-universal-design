@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const siteTitle = document.querySelector('.site-title');
     if (siteTitle) {
       const logo = document.createElement('img');
-      logo.src = "https://https://github.com/jason-me/bitcoin-universal-design/tree/main/assets/images/logo.svg"; // Bitcoin Design Community logo
+      logo.src = "https://github.com/jason-me/bitcoin-universal-design/tree/main/assets/images/logo.svg"; // Bitcoin Design Community logo
       logo.alt = "Bitcoin Design Community Logo";
       logo.style.height = "32px";
       logo.style.marginRight = "0.5rem";
