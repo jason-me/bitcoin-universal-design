@@ -70,3 +70,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Enhance Search Combobox Accessibility
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById('search-input');
+  const searchResultsList = document.querySelector('.search-results-list');
+
+  if (searchInput && searchResultsList) {
+    // Setup combobox roles/attributes
+    searchInput.setAttribute('role', 'combobox');
+    searchInput.setAttribute('aria-autocomplete', 'list');
+    searchInput.setAttribute('aria-expanded', 'false');
+    searchInput.setAttribute('aria-controls', 'search-results-list');
+
+    // Setup listbox
+    searchResultsList.setAttribute('role', 'listbox');
+    searchResultsList.setAttribute('id', 'search-results-list');
+
+    // Listen for input typing to open/close the list
+    searchInput.addEventListener('input', function () {
+      const hasResults = searchResultsList.children.length > 0;
+      searchInput.setAttribute('aria-expanded', hasResults ? 'true' : 'false');
+    });
+
+    // Also ensure each result item gets role="option"
+    const observer = new MutationObserver(function (mutationsList) {
+      for (let mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1 && node.matches('li')) {
+              node.setAttribute('role', 'option');
+            }
+          });
+        }
+      }
+    });
+
+    observer.observe(searchResultsList, { childList: true });
+  }
+});
