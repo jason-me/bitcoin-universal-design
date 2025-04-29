@@ -72,51 +72,88 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
-document.addEventListener("DOMContentLoaded", function() {
-  const searchInput = document.getElementById('search-input');
-  const searchResults = document.getElementById('search-results');
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("search-input");
+  const searchResults = document.getElementById("search-results");
 
   if (searchInput && searchResults) {
-    // Setup combobox roles immediately
-    searchInput.setAttribute('role', 'combobox');
-    searchInput.setAttribute('aria-haspopup', 'listbox');
-    searchInput.setAttribute('aria-expanded', 'false');
-    searchInput.setAttribute('aria-owns', 'search-results');
-    searchResults.setAttribute('role', 'listbox');
+    // Initial roles
+    searchInput.setAttribute("role", "combobox");
+    searchInput.setAttribute("aria-haspopup", "listbox");
+    searchInput.setAttribute("aria-expanded", "false");
+    searchInput.setAttribute("aria-owns", "search-results");
+    searchResults.setAttribute("role", "listbox");
 
     function updateSearchAccessibility() {
-      const searchResultsList = document.querySelector('.search-results-list');
-      if (!searchResultsList) return; // Bail if still missing
+      const searchResultsList = document.querySelector(".search-results-list");
+      if (!searchResultsList) return;
 
       const resultsExist = searchResultsList.children.length > 0;
 
       if (resultsExist) {
-        searchInput.setAttribute('aria-expanded', 'true');
+        searchInput.setAttribute("aria-expanded", "true");
 
-        // Set role="option" on each <li>
-        Array.from(searchResultsList.children).forEach(item => {
-          if (!item.hasAttribute('role')) {
-            item.setAttribute('role', 'option');
-          }
+        Array.from(searchResultsList.children).forEach((item, index) => {
+          item.setAttribute("role", "option");
+          item.setAttribute("id", `search-option-${index}`); // Unique ID for aria-activedescendant
         });
       } else {
-        searchInput.setAttribute('aria-expanded', 'false');
+        searchInput.setAttribute("aria-expanded", "false");
+        searchInput.removeAttribute("aria-activedescendant");
       }
     }
 
-    // Observer now watching entire searchResults div for changes
-    const observer = new MutationObserver(updateSearchAccessibility);
-    observer.observe(searchResults, { childList: true, subtree: true });
+    // Manage active descendant
+    let activeIndex = -1;
 
-    // Optional ESC handling
-    searchInput.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-        searchInput.setAttribute('aria-expanded', 'false');
+    function setActiveDescendant(index) {
+      const items = Array.from(
+        document.querySelectorAll(".search-results-list-item")
+      );
+      items.forEach((item, i) => {
+        item.classList.toggle("active-result", i === index);
+      });
+
+      if (items[index]) {
+        const id = items[index].getAttribute("id");
+        if (id) {
+          searchInput.setAttribute("aria-activedescendant", id);
+        }
+      } else {
+        searchInput.removeAttribute("aria-activedescendant");
+      }
+    }
+
+    searchInput.addEventListener("keydown", function (event) {
+      const items = Array.from(
+        document.querySelectorAll(".search-results-list-item")
+      );
+      if (!items.length) return;
+
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+        setActiveDescendant(activeIndex);
+      }
+
+      if (event.key === "ArrowUp") {
+        event.preventDefault();
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        setActiveDescendant(activeIndex);
+      }
+
+      if (event.key === "Escape") {
+        searchInput.setAttribute("aria-expanded", "false");
+        searchInput.removeAttribute("aria-activedescendant");
+        activeIndex = -1;
       }
     });
 
-    // Run once on load in case results already injected
-    updateSearchAccessibility();
+    // Watch for changes
+    const observer = new MutationObserver(updateSearchAccessibility);
+    observer.observe(searchResults, { childList: true, subtree: true });
+
+    updateSearchAccessibility(); // Run once on load
   }
 });
 
