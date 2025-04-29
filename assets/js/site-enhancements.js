@@ -75,44 +75,47 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
-  const searchResultsList = document.querySelector('.search-results-list');
 
   if (searchInput && searchResults) {
-    // Set initial attributes
+    // Setup combobox roles immediately
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
-
-    searchResults.setAttribute('role', 'listbox'); // Always a listbox
+    searchResults.setAttribute('role', 'listbox');
 
     function updateSearchAccessibility() {
-      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
+      const searchResultsList = document.querySelector('.search-results-list');
+      if (!searchResultsList) return; // Bail if still missing
+
+      const resultsExist = searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchInput.setAttribute('aria-expanded', 'true');
 
-        // Add role="option" to each search result item
+        // Set role="option" on each <li>
         Array.from(searchResultsList.children).forEach(item => {
           if (!item.hasAttribute('role')) {
             item.setAttribute('role', 'option');
           }
         });
-
       } else {
         searchInput.setAttribute('aria-expanded', 'false');
       }
     }
 
-    searchInput.addEventListener('input', updateSearchAccessibility);
+    // Observer now watching entire searchResults div for changes
+    const observer = new MutationObserver(updateSearchAccessibility);
+    observer.observe(searchResults, { childList: true, subtree: true });
 
-    searchInput.addEventListener('keydown', function (event) {
+    // Optional ESC handling
+    searchInput.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
 
-    // Initial update in case results already exist
+    // Run once on load in case results already injected
     updateSearchAccessibility();
   }
 });
