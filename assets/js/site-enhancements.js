@@ -72,11 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
+// Enhance Search Combobox Accessibility
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
+  const searchResultsList = document.querySelector('.search-results-list'); // ✅ Moved here to be accessible globally
 
-  if (searchInput && searchResults) {
+  if (searchInput && searchResults && searchResultsList) {
     // Setup combobox roles immediately
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
@@ -85,84 +87,77 @@ document.addEventListener("DOMContentLoaded", function() {
     searchResults.setAttribute('role', 'listbox');
 
     function updateSearchAccessibility() {
-      const searchResultsList = document.querySelector('.search-results-list');
-      if (!searchResultsList) return; // Bail if still missing
-
       const resultsExist = searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchInput.setAttribute('aria-expanded', 'true');
 
         // Set role="option" on each <li>
-        Array.from(searchResultsList.children).forEach(item => {
+        Array.from(searchResultsList.children).forEach((item, i) => {
           if (!item.hasAttribute('role')) {
             item.setAttribute('role', 'option');
           }
+          item.setAttribute('id', `result-option-${i}`); // Ensure id is set for aria-activedescendant
         });
       } else {
         searchInput.setAttribute('aria-expanded', 'false');
       }
     }
-        // Keyboard navigation for options in combobox
-        let activeIndex = -1;
 
-        searchInput.addEventListener('keydown', function (event) {
-          const items = Array.from(searchResultsList.querySelectorAll('.search-results-list-item'));
-    
-          if (!items.length) return;
-    
-          if (event.key === 'ArrowDown') {
-            event.preventDefault();
-            activeIndex = (activeIndex + 1) % items.length;
-            updateActiveDescendant();
-          }
-    
-          if (event.key === 'ArrowUp') {
-            event.preventDefault();
-            activeIndex = (activeIndex - 1 + items.length) % items.length;
-            updateActiveDescendant();
-          }
-    
-          if (event.key === 'Escape') {
-            searchInput.setAttribute('aria-expanded', 'false');
-            searchResults.removeAttribute('role');
-            clearActiveDescendant();
-          }
-        });
-    
-        function updateActiveDescendant() {
-          const items = Array.from(searchResultsList.querySelectorAll('.search-results-list-item'));
-          items.forEach((item, i) => {
-            const link = item.querySelector('a');
-            if (!link) return;
-    
-            if (i === activeIndex) {
-              item.setAttribute('id', `result-option-${i}`);
-              item.setAttribute('aria-selected', 'true');
-              searchInput.setAttribute('aria-activedescendant', `result-option-${i}`);
-              item.classList.add('active-result');
-            } else {
-              item.removeAttribute('aria-selected');
-              item.classList.remove('active-result');
-            }
-          });
+    // Keyboard navigation for options in combobox
+    let activeIndex = -1;
+
+    searchInput.addEventListener('keydown', function (event) {
+      const items = Array.from(searchResultsList.querySelectorAll('.search-results-list-item'));
+
+      if (!items.length) return;
+
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+        updateActiveDescendant(items);
+      }
+
+      if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        updateActiveDescendant(items);
+      }
+
+      if (event.key === 'Escape') {
+        searchInput.setAttribute('aria-expanded', 'false');
+        searchResults.removeAttribute('role');
+        clearActiveDescendant(items);
+      }
+    });
+
+    function updateActiveDescendant(items) {
+      items.forEach((item, i) => {
+        if (i === activeIndex) {
+          item.setAttribute('aria-selected', 'true');
+          searchInput.setAttribute('aria-activedescendant', item.id);
+          item.classList.add('active-result');
+        } else {
+          item.removeAttribute('aria-selected');
+          item.classList.remove('active-result');
         }
-    
-        function clearActiveDescendant() {
-          searchInput.removeAttribute('aria-activedescendant');
-          const items = searchResultsList.querySelectorAll('.search-results-list-item');
-          items.forEach(item => {
-            item.removeAttribute('aria-selected');
-            item.classList.remove('active-result');
-          });
-          activeIndex = -1;
-        }    
+      });
+    }
 
-    // Observer now watching entire searchResults div for changes
+    function clearActiveDescendant(items) {
+      searchInput.removeAttribute('aria-activedescendant');
+      items.forEach(item => {
+        item.removeAttribute('aria-selected');
+        item.classList.remove('active-result');
+      });
+      activeIndex = -1;
+    }
+
+    // Observer watching entire searchResults div for changes
     const observer = new MutationObserver(updateSearchAccessibility);
     observer.observe(searchResults, { childList: true, subtree: true });
 
-    // Optional ESC handling
+    // Optional ESC handling for collapse
     searchInput.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         searchInput.setAttribute('aria-expanded', 'false');
