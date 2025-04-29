@@ -84,23 +84,37 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    searchResults.setAttribute('role', 'listbox'); // 🛠️ Always treat it as a listbox
+    searchResults.setAttribute('role', 'listbox'); // Always a listbox
 
-    searchInput.addEventListener('input', function () {
+    function updateSearchAccessibility() {
       const resultsExist = searchResultsList && searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchInput.setAttribute('aria-expanded', 'true');
+
+        // Add role="option" to each search result item
+        Array.from(searchResultsList.children).forEach(item => {
+          if (!item.hasAttribute('role')) {
+            item.setAttribute('role', 'option');
+          }
+        });
+
       } else {
         searchInput.setAttribute('aria-expanded', 'false');
       }
-    });
+    }
+
+    searchInput.addEventListener('input', updateSearchAccessibility);
 
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
+
+    // Initial update in case results already exist
+    updateSearchAccessibility();
   }
 });
+
 
