@@ -117,12 +117,17 @@ document.addEventListener("DOMContentLoaded", function () {
           if (id) {
             searchInput.setAttribute("aria-activedescendant", id);
           }
+    
+          // 🛠 SCROLL the active item into view
+          item.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    
         } else {
           item.classList.remove("active-result");
           item.removeAttribute("aria-selected");
         }
       });
     }
+    
 
     searchInput.addEventListener("keydown", function (event) {
       const items = Array.from(
