@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchResultsList = document.querySelector('.search-results-list');
 
   if (searchInput && searchResults) {
-    // Set initial role on search input
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
@@ -88,20 +87,20 @@ document.addEventListener("DOMContentLoaded", function() {
       const resultsExist = searchResultsList && searchResultsList.children.length > 0;
 
       if (resultsExist) {
-        searchResults.setAttribute('role', 'listbox');
+        searchResults.setAttribute('role', 'listbox'); // 🔥 NEW LINE
         searchInput.setAttribute('aria-expanded', 'true');
       } else {
-        searchResults.removeAttribute('role');
+        searchResults.removeAttribute('role'); // 🔥 NEW LINE
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
 
-    // Optional: ESC key collapses list
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
-        searchResults.removeAttribute('role');
+        searchResults.removeAttribute('role'); // 🔥 NEW LINE
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
   }
 });
+
