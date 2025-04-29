@@ -153,4 +153,7 @@ body > * {
   /* Optional: visible keyboard focus */
   outline-offset: -1px; }
 
+.search-result-highlight {
+  color: white !important; }
+
 /*# sourceMappingURL=style.css.map */
