@@ -132,9 +132,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (event.key === "ArrowDown") {
         event.preventDefault();
-        activeIndex = (activeIndex + 1) % items.length;
+      
+        // Only update once results exist
+        const items = Array.from(document.querySelectorAll(".search-results-list-item"));
+        if (!items.length) return;
+      
+        if (activeIndex < 0) {
+          activeIndex = 0; // 💥 Make the first item active immediately
+        } else {
+          activeIndex = (activeIndex + 1) % items.length;
+        }
+      
         setActiveDescendant(activeIndex);
       }
+      
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
