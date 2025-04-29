@@ -72,20 +72,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
-window.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults && searchResultsList) {
-    // Set static ARIA attributes
+  if (searchInput && searchResults) {
+    // Set initial role on search input
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    function updateComboboxState() {
-      const resultsExist = searchResultsList.children.length > 0;
+    searchInput.addEventListener('input', function () {
+      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchResults.setAttribute('role', 'listbox');
@@ -94,10 +94,9 @@ window.addEventListener("load", function() {
         searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
       }
-    }
+    });
 
-    searchInput.addEventListener('input', updateComboboxState);
-
+    // Optional: ESC key collapses list
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         searchResults.removeAttribute('role');
