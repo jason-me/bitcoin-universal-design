@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
+// Enhance Search Combobox Accessibility
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   const searchResults = document.getElementById("search-results");
@@ -117,17 +118,15 @@ document.addEventListener("DOMContentLoaded", function () {
           if (id) {
             searchInput.setAttribute("aria-activedescendant", id);
           }
-    
-          // 🛠 SCROLL the active item into view
+
+          // ✅ Scroll selected item into view
           item.scrollIntoView({ block: "nearest", behavior: "smooth" });
-    
         } else {
           item.classList.remove("active-result");
           item.removeAttribute("aria-selected");
         }
       });
     }
-    
 
     searchInput.addEventListener("keydown", function (event) {
       const items = Array.from(
@@ -135,16 +134,29 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       if (!items.length) return;
 
+      // ✅ Fix 1: First arrow press now highlights first item
       if (event.key === "ArrowDown") {
         event.preventDefault();
-        activeIndex = (activeIndex + 1) % items.length;
+        activeIndex = activeIndex === -1 ? 0 : (activeIndex + 1) % items.length;
         setActiveDescendant(activeIndex);
       }
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
-        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        activeIndex = activeIndex === -1 ? items.length - 1 : (activeIndex - 1 + items.length) % items.length;
         setActiveDescendant(activeIndex);
+      }
+
+      if (event.key === "Enter") {
+        // ✅ Fix 2: Enter navigates to the focused result
+        const activeId = searchInput.getAttribute("aria-activedescendant");
+        if (activeId) {
+          const activeItem = document.getElementById(activeId);
+          const link = activeItem?.querySelector("a");
+          if (link && link.href) {
+            window.location.href = link.href;
+          }
+        }
       }
 
       if (event.key === "Escape") {
