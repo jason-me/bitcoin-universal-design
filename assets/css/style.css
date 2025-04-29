@@ -134,8 +134,11 @@ body > * {
   font-weight: bold !important;
   text-decoration: underline !important; }
 
+/* Highlight the active combobox option */
 .active-result {
-  background-color: #e0e0e0;
-  /* Light gray */ }
+  background-color: #004080;
+  /* Darker blue background for active item */
+  color: white;
+  /* White text for contrast */ }
 
 /*# sourceMappingURL=style.css.map */
