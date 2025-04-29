@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
-// Enhance Search Combobox Accessibility
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   const searchResults = document.getElementById("search-results");
