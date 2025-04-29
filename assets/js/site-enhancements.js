@@ -103,6 +103,60 @@ document.addEventListener("DOMContentLoaded", function() {
         searchInput.setAttribute('aria-expanded', 'false');
       }
     }
+        // Keyboard navigation for options in combobox
+        let activeIndex = -1;
+
+        searchInput.addEventListener('keydown', function (event) {
+          const items = Array.from(searchResultsList.querySelectorAll('.search-results-list-item'));
+    
+          if (!items.length) return;
+    
+          if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            activeIndex = (activeIndex + 1) % items.length;
+            updateActiveDescendant();
+          }
+    
+          if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            activeIndex = (activeIndex - 1 + items.length) % items.length;
+            updateActiveDescendant();
+          }
+    
+          if (event.key === 'Escape') {
+            searchInput.setAttribute('aria-expanded', 'false');
+            searchResults.removeAttribute('role');
+            clearActiveDescendant();
+          }
+        });
+    
+        function updateActiveDescendant() {
+          const items = Array.from(searchResultsList.querySelectorAll('.search-results-list-item'));
+          items.forEach((item, i) => {
+            const link = item.querySelector('a');
+            if (!link) return;
+    
+            if (i === activeIndex) {
+              item.setAttribute('id', `result-option-${i}`);
+              item.setAttribute('aria-selected', 'true');
+              searchInput.setAttribute('aria-activedescendant', `result-option-${i}`);
+              item.classList.add('active-result');
+            } else {
+              item.removeAttribute('aria-selected');
+              item.classList.remove('active-result');
+            }
+          });
+        }
+    
+        function clearActiveDescendant() {
+          searchInput.removeAttribute('aria-activedescendant');
+          const items = searchResultsList.querySelectorAll('.search-results-list-item');
+          items.forEach(item => {
+            item.removeAttribute('aria-selected');
+            item.classList.remove('active-result');
+          });
+          activeIndex = -1;
+        }    
 
     // Observer now watching entire searchResults div for changes
     const observer = new MutationObserver(updateSearchAccessibility);
