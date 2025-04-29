@@ -77,15 +77,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults && searchResultsList) {
+  if (searchInput && searchResults) {
+    // Set initial role on search input
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    // MutationObserver watches DOM changes
-    const observer = new MutationObserver(() => {
-      const resultsExist = searchResultsList.children.length > 0;
+    searchInput.addEventListener('input', function () {
+      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchResults.setAttribute('role', 'listbox');
@@ -96,8 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    observer.observe(searchResultsList, { childList: true });
-
+    // Optional: ESC key collapses list
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         searchResults.removeAttribute('role');
