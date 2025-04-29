@@ -77,30 +77,32 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults) {
+  if (searchInput && searchResults && searchResultsList) {
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    searchInput.addEventListener('input', function () {
-      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
+    // MutationObserver watches DOM changes
+    const observer = new MutationObserver(() => {
+      const resultsExist = searchResultsList.children.length > 0;
 
       if (resultsExist) {
-        searchResults.setAttribute('role', 'listbox'); // 🔥 NEW LINE
+        searchResults.setAttribute('role', 'listbox');
         searchInput.setAttribute('aria-expanded', 'true');
       } else {
-        searchResults.removeAttribute('role'); // 🔥 NEW LINE
+        searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
 
+    observer.observe(searchResultsList, { childList: true });
+
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
-        searchResults.removeAttribute('role'); // 🔥 NEW LINE
+        searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
       }
     });
   }
 });
-
