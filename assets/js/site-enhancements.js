@@ -83,6 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.setAttribute("aria-owns", "search-results");
     searchResults.setAttribute("role", "listbox");
 
+    let activeIndex = -1;
+
     function updateSearchAccessibility() {
       const searchResultsList = document.querySelector(".search-results-list");
       if (!searchResultsList) return;
@@ -98,13 +100,12 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         searchInput.setAttribute("aria-expanded", "false");
         searchInput.removeAttribute("aria-activedescendant");
+        activeIndex = -1; // 🧼 Reset index if no results
       }
     }
 
-    let activeIndex = -1;
-
     function setActiveDescendant(index) {
-      // Delay for DOM paint if needed
+      // Run after DOM paints to avoid timing issues
       requestAnimationFrame(() => {
         const items = Array.from(document.querySelectorAll(".search-results-list-item"));
         items.forEach((item, i) => {
@@ -125,41 +126,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     searchInput.addEventListener("keydown", function (event) {
-      updateSearchAccessibility(); // 🛠 Ensure DOM state is ready
-
       const items = Array.from(document.querySelectorAll(".search-results-list-item"));
       if (!items.length) return;
 
       if (event.key === "ArrowDown") {
         event.preventDefault();
-      
-        // Only update once results exist
-        const items = Array.from(document.querySelectorAll(".search-results-list-item"));
-        if (!items.length) return;
-      
-        if (activeIndex < 0) {
-          activeIndex = 0; // 💥 Make the first item active immediately
+        updateSearchAccessibility(); // 🔄 Make sure roles/IDs are in place
+
+        // ✅ First item gets selected on first key press
+        if (activeIndex < 0 || activeIndex >= items.length) {
+          activeIndex = 0;
         } else {
           activeIndex = (activeIndex + 1) % items.length;
         }
-      
+
         setActiveDescendant(activeIndex);
       }
-      
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
+        updateSearchAccessibility();
         activeIndex = (activeIndex - 1 + items.length) % items.length;
         setActiveDescendant(activeIndex);
       }
 
       if (event.key === "Enter" && activeIndex >= 0) {
-        event.preventDefault(); // Prevent form submit if applicable
+        event.preventDefault();
         const selectedItem = items[activeIndex];
-        const link = selectedItem.querySelector('a');
-        if (link) {
-          link.click();
-        }
+        const link = selectedItem.querySelector("a");
+        if (link) link.click();
       }
 
       if (event.key === "Escape") {
@@ -173,10 +168,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    const observer = new MutationObserver(updateSearchAccessibility);
+    // 👀 Watch DOM for injected search results and reset activeIndex
+    const observer = new MutationObserver(() => {
+      activeIndex = -1;
+      updateSearchAccessibility();
+    });
     observer.observe(searchResults, { childList: true, subtree: true });
 
-    updateSearchAccessibility(); // Initialize on load
+    updateSearchAccessibility(); // Run once initially
   }
 });
 
