@@ -72,40 +72,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
+// Enhance Search Combobox Accessibility
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
-  const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults && searchResultsList) {
+  if (searchInput && searchResults) {
     // Initialize attributes on input
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    // Function to update aria-expanded and role
-    function updateComboboxState() {
-      const hasResults = searchResultsList.children.length > 0;
+    // Always assign role="listbox" to the container
+    searchResults.setAttribute('role', 'listbox');
 
-      if (hasResults) {
-        searchInput.setAttribute('aria-expanded', 'true');
-        searchResults.setAttribute('role', 'listbox');
-      } else {
-        searchInput.setAttribute('aria-expanded', 'false');
-        searchResults.removeAttribute('role');
-      }
-    }
+    // Observe changes inside the searchResults dynamically
+    const observer = new MutationObserver(() => {
+      const hasResults = searchResults.querySelectorAll('.search-result').length > 0;
+      searchInput.setAttribute('aria-expanded', hasResults ? 'true' : 'false');
+    });
 
-    // Observe changes inside the search results list
-    const observer = new MutationObserver(updateComboboxState);
-    observer.observe(searchResultsList, { childList: true, subtree: true });
+    observer.observe(searchResults, { childList: true, subtree: true });
 
-    // Also check when pressing Escape
+    // ESC manually closes the combobox
     searchInput.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         searchInput.setAttribute('aria-expanded', 'false');
-        searchResults.removeAttribute('role');
+        searchResults.innerHTML = ''; // Clear results if wanted
       }
     });
   }
