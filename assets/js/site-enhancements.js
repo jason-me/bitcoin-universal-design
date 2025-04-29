@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchResults = document.getElementById("search-results");
 
   if (searchInput && searchResults) {
-    // Initial roles
     searchInput.setAttribute("role", "combobox");
     searchInput.setAttribute("aria-haspopup", "listbox");
     searchInput.setAttribute("aria-expanded", "false");
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (resultsExist) {
         searchInput.setAttribute("aria-expanded", "true");
-
         Array.from(searchResultsList.children).forEach((item, index) => {
           item.setAttribute("role", "option");
           item.setAttribute("id", `search-option-${index}`);
@@ -106,20 +104,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let activeIndex = -1;
 
     function setActiveDescendant(index) {
-      const items = Array.from(
-        document.querySelectorAll(".search-results-list-item")
-      );
+      const items = Array.from(document.querySelectorAll(".search-results-list-item"));
       items.forEach((item, i) => {
         if (i === index) {
           item.classList.add("active-result");
           item.setAttribute("aria-selected", "true");
+          item.setAttribute("tabindex", "-1"); // optional: make it focusable if needed
           const id = item.getAttribute("id");
           if (id) {
             searchInput.setAttribute("aria-activedescendant", id);
           }
 
-          // ✅ Scroll selected item into view
-          item.scrollIntoView({ block: "nearest", behavior: "smooth" });
+          // ✅ Always ensure visible focus on move
+          item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         } else {
           item.classList.remove("active-result");
           item.removeAttribute("aria-selected");
@@ -128,33 +125,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     searchInput.addEventListener("keydown", function (event) {
-      const items = Array.from(
-        document.querySelectorAll(".search-results-list-item")
-      );
+      const items = Array.from(document.querySelectorAll(".search-results-list-item"));
       if (!items.length) return;
 
-      // ✅ Fix 1: First arrow press now highlights first item
       if (event.key === "ArrowDown") {
         event.preventDefault();
-        activeIndex = activeIndex === -1 ? 0 : (activeIndex + 1) % items.length;
+        activeIndex = (activeIndex + 1) % items.length;
         setActiveDescendant(activeIndex);
       }
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
-        activeIndex = activeIndex === -1 ? items.length - 1 : (activeIndex - 1 + items.length) % items.length;
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
         setActiveDescendant(activeIndex);
       }
 
-      if (event.key === "Enter") {
-        // ✅ Fix 2: Enter navigates to the focused result
-        const activeId = searchInput.getAttribute("aria-activedescendant");
-        if (activeId) {
-          const activeItem = document.getElementById(activeId);
-          const link = activeItem?.querySelector("a");
-          if (link && link.href) {
-            window.location.href = link.href;
-          }
+      if (event.key === "Enter" && activeIndex >= 0) {
+        event.preventDefault(); // 🛑 Prevent form submission if inside a form
+        const selectedItem = items[activeIndex];
+        const link = selectedItem.querySelector('a');
+        if (link) {
+          link.click(); // 👈 trigger navigation
         }
       }
 
@@ -172,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new MutationObserver(updateSearchAccessibility);
     observer.observe(searchResults, { childList: true, subtree: true });
 
-    updateSearchAccessibility(); // Initialize once
+    updateSearchAccessibility();
   }
 });
 
