@@ -134,4 +134,9 @@ body > * {
   font-weight: bold !important;
   text-decoration: underline !important; }
 
+.active-result {
+  background-color: #0057b8;
+  /* Blue background or whatever matches your theme */
+  color: white; }
+
 /*# sourceMappingURL=style.css.map */

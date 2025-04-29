@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         Array.from(searchResultsList.children).forEach((item, index) => {
           item.setAttribute("role", "option");
-          item.setAttribute("id", `search-option-${index}`); // Unique ID for aria-activedescendant
+          item.setAttribute("id", `search-option-${index}`);
         });
       } else {
         searchInput.setAttribute("aria-expanded", "false");
@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Manage active descendant
     let activeIndex = -1;
 
     function setActiveDescendant(index) {
@@ -111,17 +110,18 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".search-results-list-item")
       );
       items.forEach((item, i) => {
-        item.classList.toggle("active-result", i === index);
-      });
-
-      if (items[index]) {
-        const id = items[index].getAttribute("id");
-        if (id) {
-          searchInput.setAttribute("aria-activedescendant", id);
+        if (i === index) {
+          item.classList.add("active-result");
+          item.setAttribute("aria-selected", "true");
+          const id = item.getAttribute("id");
+          if (id) {
+            searchInput.setAttribute("aria-activedescendant", id);
+          }
+        } else {
+          item.classList.remove("active-result");
+          item.removeAttribute("aria-selected");
         }
-      } else {
-        searchInput.removeAttribute("aria-activedescendant");
-      }
+      });
     }
 
     searchInput.addEventListener("keydown", function (event) {
@@ -146,14 +146,17 @@ document.addEventListener("DOMContentLoaded", function () {
         searchInput.setAttribute("aria-expanded", "false");
         searchInput.removeAttribute("aria-activedescendant");
         activeIndex = -1;
+        items.forEach(item => {
+          item.classList.remove("active-result");
+          item.removeAttribute("aria-selected");
+        });
       }
     });
 
-    // Watch for changes
     const observer = new MutationObserver(updateSearchAccessibility);
     observer.observe(searchResults, { childList: true, subtree: true });
 
-    updateSearchAccessibility(); // Run once on load
+    updateSearchAccessibility(); // Initialize once
   }
 });
 
