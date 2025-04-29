@@ -77,30 +77,35 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults) {
-    // Set initial role on search input
+  if (searchInput && searchResults && searchResultsList) {
+    // Initialize attributes on input
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    searchInput.addEventListener('input', function () {
-      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
+    // Function to update aria-expanded and role
+    function updateComboboxState() {
+      const hasResults = searchResultsList.children.length > 0;
 
-      if (resultsExist) {
-        searchResults.setAttribute('role', 'listbox');
+      if (hasResults) {
         searchInput.setAttribute('aria-expanded', 'true');
+        searchResults.setAttribute('role', 'listbox');
       } else {
-        searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
+        searchResults.removeAttribute('role');
       }
-    });
+    }
 
-    // Optional: ESC key collapses list
-    searchInput.addEventListener('keydown', function (event) {
+    // Observe changes inside the search results list
+    const observer = new MutationObserver(updateComboboxState);
+    observer.observe(searchResultsList, { childList: true, subtree: true });
+
+    // Also check when pressing Escape
+    searchInput.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
-        searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
+        searchResults.removeAttribute('role');
       }
     });
   }
