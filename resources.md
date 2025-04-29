@@ -49,6 +49,10 @@ nav_order: 4
 - [A11Y Project](https://www.a11yproject.com/)
 - [Inclusive Design 24](https://inclusivedesign24.org/)
 
+## Just for Fun
+
+- [Hocus Focus - A keyboard navigation horror game.](https://jekyll-themes.com/hteumeuleu/hocus-focus)
+
 ## Contact
 
 If you'd like to contribute to this guide or have questions about implementing these principles, please [open an issue](https://github.com/yourusername/bitcoin-universal-design/issues) or contact us at [your-email@example.com](mailto:your-email@example.com).
