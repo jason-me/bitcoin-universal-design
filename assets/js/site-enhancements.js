@@ -104,45 +104,37 @@ document.addEventListener("DOMContentLoaded", function () {
     let activeIndex = -1;
 
     function setActiveDescendant(index) {
-      const items = Array.from(document.querySelectorAll(".search-results-list-item"));
-      items.forEach((item, i) => {
-        if (i === index) {
-          item.classList.add("active-result");
-          item.setAttribute("aria-selected", "true");
-          item.setAttribute("tabindex", "-1"); // optional: make it focusable if needed
-          const id = item.getAttribute("id");
-          if (id) {
-            searchInput.setAttribute("aria-activedescendant", id);
+      // Delay for DOM paint if needed
+      requestAnimationFrame(() => {
+        const items = Array.from(document.querySelectorAll(".search-results-list-item"));
+        items.forEach((item, i) => {
+          if (i === index) {
+            item.classList.add("active-result");
+            item.setAttribute("aria-selected", "true");
+            const id = item.getAttribute("id");
+            if (id) {
+              searchInput.setAttribute("aria-activedescendant", id);
+            }
+            item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          } else {
+            item.classList.remove("active-result");
+            item.removeAttribute("aria-selected");
           }
-
-          // ✅ Always ensure visible focus on move
-          item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-        } else {
-          item.classList.remove("active-result");
-          item.removeAttribute("aria-selected");
-        }
+        });
       });
     }
 
     searchInput.addEventListener("keydown", function (event) {
+      updateSearchAccessibility(); // 🛠 Ensure DOM state is ready
+
       const items = Array.from(document.querySelectorAll(".search-results-list-item"));
       if (!items.length) return;
 
       if (event.key === "ArrowDown") {
         event.preventDefault();
-        
-        // 👇 Ensure results are visible and roles/IDs are set before navigating
-        updateSearchAccessibility();
-      
-        if (activeIndex === -1) {
-          activeIndex = 0;
-        } else {
-          activeIndex = (activeIndex + 1) % items.length;
-        }
-      
+        activeIndex = (activeIndex + 1) % items.length;
         setActiveDescendant(activeIndex);
       }
-      
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
@@ -151,11 +143,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (event.key === "Enter" && activeIndex >= 0) {
-        event.preventDefault(); // 🛑 Prevent form submission if inside a form
+        event.preventDefault(); // Prevent form submit if applicable
         const selectedItem = items[activeIndex];
         const link = selectedItem.querySelector('a');
         if (link) {
-          link.click(); // 👈 trigger navigation
+          link.click();
         }
       }
 
@@ -173,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new MutationObserver(updateSearchAccessibility);
     observer.observe(searchResults, { childList: true, subtree: true });
 
-    updateSearchAccessibility();
+    updateSearchAccessibility(); // Initialize on load
   }
 });
 
