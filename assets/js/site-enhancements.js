@@ -72,48 +72,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
-function enhanceComboboxAccessibility() {
+document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
   if (searchInput && searchResults && searchResultsList) {
-    // Initialize attributes
+    // Setup static attributes
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
     function updateComboboxState() {
-      const hasResults = searchResultsList.children.length > 0;
+      const hasResults = searchResultsList && searchResultsList.children.length > 0;
+
       if (hasResults) {
-        searchInput.setAttribute('aria-expanded', 'true');
         searchResults.setAttribute('role', 'listbox');
+        searchInput.setAttribute('aria-expanded', 'true');
       } else {
-        searchInput.setAttribute('aria-expanded', 'false');
         searchResults.removeAttribute('role');
+        searchInput.setAttribute('aria-expanded', 'false');
       }
     }
 
-    // Monitor changes
-    const observer = new MutationObserver(updateComboboxState);
-    observer.observe(searchResultsList, { childList: true, subtree: true });
+    // When user types — trigger check
+    searchInput.addEventListener('input', updateComboboxState);
 
-    // ESC closes results
-    searchInput.addEventListener('keydown', function(event) {
+    // When search results actually change — trigger check
+    const observer = new MutationObserver(updateComboboxState);
+    observer.observe(searchResultsList, { childList: true, subtree: false });
+
+    // Optional: ESC closes results
+    searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         searchInput.setAttribute('aria-expanded', 'false');
         searchResults.removeAttribute('role');
       }
     });
   }
-}
-
-// Defer enhancement slightly AFTER Just the Docs finishes
-document.addEventListener("DOMContentLoaded", function () {
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      enhanceComboboxAccessibility();
-    });
-  });
 });
