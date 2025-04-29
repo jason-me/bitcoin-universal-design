@@ -77,15 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults) {
-    // Set initial role on search input
+  if (searchInput && searchResults && searchResultsList) {
+    // Set static attributes
     searchInput.setAttribute('role', 'combobox');
     searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
     searchInput.setAttribute('aria-owns', 'search-results');
 
-    searchInput.addEventListener('input', function () {
-      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
+    // Update function
+    function updateComboboxState() {
+      const resultsExist = searchResultsList.children.length > 0;
 
       if (resultsExist) {
         searchResults.setAttribute('role', 'listbox');
@@ -94,9 +95,12 @@ document.addEventListener("DOMContentLoaded", function() {
         searchResults.removeAttribute('role');
         searchInput.setAttribute('aria-expanded', 'false');
       }
-    });
+    }
 
-    // Optional: ESC key collapses list
+    // When user types
+    searchInput.addEventListener('input', updateComboboxState);
+
+    // Also when Escape is pressed
     searchInput.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         searchResults.removeAttribute('role');
