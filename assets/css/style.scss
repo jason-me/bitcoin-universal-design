@@ -176,10 +176,24 @@ body {
 }
 
 /* Highlight the active combobox option */
-.active-result {
-    background-color: #004080; /* Darker blue background for active item */
-    color: white;              /* White text for contrast */
-  }
-  
+
+.search-results-list-item.active-result,
+.search-results-list-item.active-result a,
+.search-results-list-item.active-result .search-result,
+.search-results-list-item.active-result .search-result.active {
+  background-color: #004080 !important;
+  color: white !important; }
+
+.search-results-list-item.active-result .search-result-title,
+.search-results-list-item.active-result .search-result-section,
+.search-results-list-item.active-result .search-result-rel-url,
+.search-results-list-item.active-result .search-result-preview {
+  color: white !important; }
+
+.search-results-list-item.active-result {
+  outline: 2px solid #ffffff33;
+  /* Optional: visible keyboard focus */
+  outline-offset: -1px; }
+    
   
   
