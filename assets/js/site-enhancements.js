@@ -72,51 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Enhance Search Combobox Accessibility
-// Enhance Search Combobox Accessibility
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById('search-input');
-  const searchResults = document.getElementById('search-results'); // NOT the UL directly
+  const searchResults = document.getElementById('search-results');
   const searchResultsList = document.querySelector('.search-results-list');
 
-  if (searchInput && searchResults && searchResultsList) {
-    // Setup combobox attributes
+  if (searchInput && searchResults) {
+    // Set initial role on search input
     searchInput.setAttribute('role', 'combobox');
-    searchInput.setAttribute('aria-autocomplete', 'list');
+    searchInput.setAttribute('aria-haspopup', 'listbox');
     searchInput.setAttribute('aria-expanded', 'false');
-    searchInput.setAttribute('aria-controls', 'search-results-list'); // Target the UL
+    searchInput.setAttribute('aria-owns', 'search-results');
 
-    // Setup UL listbox
-    searchResultsList.setAttribute('role', 'listbox');
-    searchResultsList.setAttribute('id', 'search-results-list'); // ID for aria-controls to match
+    searchInput.addEventListener('input', function () {
+      const resultsExist = searchResultsList && searchResultsList.children.length > 0;
 
-    // Show/hide aria-expanded dynamically based on visible results
-    function updateAriaExpanded() {
-      const visible = searchResults.offsetHeight > 0 && searchResults.style.display !== 'none';
-      searchInput.setAttribute('aria-expanded', visible ? 'true' : 'false');
-    }
-
-    // Listen to typing
-    searchInput.addEventListener('input', updateAriaExpanded);
-
-    // Also monitor DOM changes to update aria-expanded
-    const observer = new MutationObserver(updateAriaExpanded);
-    observer.observe(searchResults, { attributes: true, childList: true, subtree: true });
-
-    // Setup role="option" on search results
-    const itemObserver = new MutationObserver(function (mutationsList) {
-      for (let mutation of mutationsList) {
-        if (mutation.type === 'childList') {
-          mutation.addedNodes.forEach(node => {
-            if (node.nodeType === 1) {
-              const link = node.querySelector('a.search-result');
-              if (link) {
-                link.setAttribute('role', 'option');
-              }
-            }
-          });
-        }
+      if (resultsExist) {
+        searchResults.setAttribute('role', 'listbox');
+        searchInput.setAttribute('aria-expanded', 'true');
+      } else {
+        searchResults.removeAttribute('role');
+        searchInput.setAttribute('aria-expanded', 'false');
       }
     });
-    itemObserver.observe(searchResultsList, { childList: true });
+
+    // Optional: ESC key collapses list
+    searchInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        searchResults.removeAttribute('role');
+        searchInput.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 });
