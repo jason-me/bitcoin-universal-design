@@ -130,9 +130,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (event.key === "ArrowDown") {
         event.preventDefault();
-        activeIndex = (activeIndex + 1) % items.length;
+        
+        // 👇 Ensure results are visible and roles/IDs are set before navigating
+        updateSearchAccessibility();
+      
+        if (activeIndex === -1) {
+          activeIndex = 0;
+        } else {
+          activeIndex = (activeIndex + 1) % items.length;
+        }
+      
         setActiveDescendant(activeIndex);
       }
+      
 
       if (event.key === "ArrowUp") {
         event.preventDefault();
