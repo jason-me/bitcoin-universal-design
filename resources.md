@@ -85,8 +85,8 @@ nav_order: 4
 
 ## Bitcoin-Focused Bounties & Projects
 
-- [Bitcoin Design Guide](https://bitcoin.design/guide/)
-- []
+- [Bitcoin Design Guide - Accessibility](https://bitcoin.design/guide/designing-products/accessibility/)
+- [Bitcoin Design - Accessibility fix hit list](https://github.com/BitcoinDesign/Meta/issues/516)
 - [Zeus Bounties](https://github.com/ZeusLN/zeus/blob/master/docs/Bounties.md#accessibility-fixes)
 - [Sphinx Chat Bounty Work](https://github.com/stakwork/sphinx-tribes-frontend/issues/1040)
 - [Stacker News Media Kit Feedback](https://github.com/stackernews/stacker.news/issues/1922)
