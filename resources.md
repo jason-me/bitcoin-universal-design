@@ -32,13 +32,22 @@ nav_order: 4
 - [WAVE Extension (Proprietar - Free)](https://wave.webaim.org/extension/) - WebAIM's browser extension for evaluating web accessibility
 - [Lighthouse (Apache 2.0)](https://developers.google.com/web/tools/lighthouse) - Chrome DevTools audit for performance, SEO, and accessibility
 - [Accessibility Insights (MIT License)](https://accessibilityinsights.io/) - Microsoft's suite for accessibility testing on web and Windows
-- [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Former Chrome extension for quick accessibility audits by TPGi
+- [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
 - [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [WCAG-EM Report Tool (W3C License)](https://www.w3.org/WAI/eval/report-tool/) - Helps create structured WCAG conformance evaluation reports
 - [Equal Access Toolkit (Apache 2.0)](https://www.ibm.com/able/toolkit) - IBM’s framework and resources for inclusive design
 - [APCA Contrast Calculator (W3C License)](https://www.myndex.com/APCA/) - Perceptual contrast algorithm for modern UI color systems
 - [Equalify.App (GPL)](https://equalify.app) - Automated accessibility auditing tool with visual and code insights
 - [Editoria11y (GPL)](https://editoria11y.thoughtbot.com) - Inline accessibility checker designed for CMS content editors
+
+## Mobile Accessibility Testing Tools
+
+- [Accessibility Scanner (Android, MIT License)](https://github.com/google/accessibility-test-framework) - Google's tool that suggests accessibility improvements in Android apps
+- [Android Accessibility Test Framework (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used by automated accessibility testing tools for Android
+- [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility) - Apple's macOS tool for inspecting and debugging accessibility in iOS apps
+- [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Pre-release testing suite with automated accessibility checks
+- [SwiftUI Accessibility Inspector (Proprietary)](https://developer.apple.com/videos/play/wwdc2020/10653/) - Accessibility debugging tool for SwiftUI apps using Xcode
+
 
 
 ## Bitcoin-Specific Resources
