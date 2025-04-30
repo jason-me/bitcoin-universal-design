@@ -15,10 +15,10 @@ This guide explores how building for users with disabilities, impairments, or at
 
 ## Why Accessibility Matters for Bitcoin
 
-- ***Mistakes are costly***: Accessible design helps prevent user errors that can lead to irreversible loss of funds
-- ***Usability inspires confidence***: Trustless systems gain credibility when all users can navigate them independently and successfully regardless of technical skill or ability
-- ***Complicated UX is a threat vector***: Confusing or inaccessible interfaces increase the risk of mishandled keys, insecure backups, or theft of funds
-- ***Accessibile design is resilient design***: Tools that work across diverse abilities, devices, and environments are often more robust and reliable in general
+- **Mistakes are costly**: Accessible design helps prevent user errors that can lead to irreversible loss of funds
+- **Usability inspires confidence**: Trustless systems gain credibility when all users can navigate them independently and successfully regardless of technical skill or ability
+- **Complicated UX is a threat vector**: Confusing or inaccessible interfaces increase the risk of mishandled keys, insecure backups, or theft of funds
+- **Accessibile design is resilient design**: Tools that work across diverse abilities, devices, and environments are often more robust and reliable in general
 
 ## Our Approach
 
