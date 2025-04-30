@@ -68,9 +68,10 @@ nav_order: 4
 
 ## Recommended Blogs & Reading
 
-- [Adrian Roselli Blog](https://adrianroselli.com/)
 - [TPGi - Technical Blog](https://www.tpgi.com/technical/)
 - [W3C/WAI - The Business Case for Digital Accesibilty](https://www.w3.org/WAI/business-case/)
+- [Adrian Roselli Blog](https://adrianroselli.com/)
+- [Scott O'Hara Blog](https://www.scottohara.me/)
 - "Universal Design for Web Applications" by Wendy Chisholm & Matt May
 - "Inclusive Design Patterns" by Heydon Pickering
 - "Design for Real Life" by Eric Meyer & Sara Wachter-Boettcher
