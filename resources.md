@@ -26,6 +26,7 @@ nav_order: 4
 
 ## Testing Tools
 
+- [a11y-tools – Ian Lloyd](https://a11y-tools.com/) - Curated directory of accessibility checkers, simulators, color tools, and bookmarklets
 - [Equalify.App (GPL)](https://equalify.app) - Open Source automated accessibility auditing tool
 - [axe DevTools (MPL 2.0)](https://www.deque.com/axe/) - In-browser accessibility scanner by Deque
 - [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
