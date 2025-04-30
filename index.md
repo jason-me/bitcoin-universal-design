@@ -29,7 +29,7 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
 | Title | Time (UTC) | Type |
 |-------|------------|------|
 | [Intro Workshop](https://github.com/BitcoinDesign/Meta/issues/780) | Tuesday May 6, 17:00| 🧠 Overview |
-| [Workshop 1: Use Cases + Assistive Tech](https://github.com/BitcoinDesign/Meta/issues/783) | Thursday May 15, 13:00 | 🌐 GAAD |
+| [Workshop 1: Use Cases + Assistive Tech](https://github.com/BitcoinDesign/Meta/issues/788) | Thursday May 15, 13:00 | 🌐 GAAD |
 | [Accessibility Office Hours 1](https://github.com/BitcoinDesign/Meta/issues/784) | Thursday May 15, 15:00 | 💬 Q&A |
 | [Workshop 2: Testing & Design Patterns](https://github.com/BitcoinDesign/Meta/issues/785) | Thursday May 15, 15:00 | 🌐 GAAD |
 | [Accessibility Office Hours 2]() | Thursday May 15, 21:00 | 💬 Q&A |

@@ -35,8 +35,9 @@ nav_order: 4
 - [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [WCAG-EM Report Tool (W3C License)](https://www.w3.org/WAI/eval/report-tool/) - Helps create structured WCAG conformance evaluation reports
 - [Equal Access Toolkit (Apache 2.0)](https://www.ibm.com/able/toolkit) - IBM’s framework and resources for inclusive design
-- [APCA Contrast Calculator (W3C License)](https://www.myndex.com/APCA/) - Perceptual contrast algorithm for modern UI color systems
+- [APCA Contrast Calculator (W3C License)](https://github.com/Myndex) - Perceptual contrast algorithm for modern UI color systems
 - [Editoria11y (GPL)](https://editorially.thoughtbot.com) - Inline accessibility checker designed for CMS content editors
+
 
 ## Mobile Accessibility Testing Tools
 
@@ -45,6 +46,18 @@ nav_order: 4
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
 
+
+## Developer Tools & CI/CD Integrations
+
+- [eslint-plugin-jsx-a11y (MIT License)](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - ESLint plugin that surfaces accessibility issues in JSX during development
+- [Pa11y (MIT License)](https://pa11y.org/) - Command-line tool and dashboard for automated accessibility testing
+- [jest-axe (MIT License)](https://github.com/nickcolley/jest-axe) - Jest matcher that integrates axe-core for unit testing accessibility
+- [cypress-axe (MIT License)](https://github.com/component-driven/cypress-axe) - Integrates axe-core into Cypress end-to-end test flows
+- [axe-playwright (MPL 2.0)](https://github.com/abhinaba-ghosh/axe-playwright) - Playwright integration for automated accessibility scans using axe-core
+- [tota11y (MIT License)](https://khan.github.io/tota11y/) - A visual overlay tool that helps visualize how screen readers interpret a page
+- [Tenon.io (Proprietary)](https://tenon.io/) - API-based accessibility testing tool for integration into dev workflows
+- [HTML_CodeSniffer (BSD License)](https://squizlabs.github.io/HTML_CodeSniffer/) - Client-side script for identifying WCAG violations in HTML
+- [The A11y Machine (MIT License)](https://github.com/liip/TheA11yMachine) - Automated tool that crawls websites and checks them for accessibility issues
 
 
 ## Bitcoin-Specific Resources
