@@ -44,7 +44,7 @@ nav_order: 4
 - [Accessibility Test Framework for Android (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used in Espresso and Robolectric to automate accessibility checks during Android app testing
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
-- [SwiftUI Accessibility Inspector (Proprietary)](https://developer.apple.com/videos/play/wwdc2020/10653/) - Built-in Xcode tool for reviewing accessibility attributes in SwiftUI-based interfaces
+
 
 
 ## Bitcoin-Specific Resources
