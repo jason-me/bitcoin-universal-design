@@ -26,17 +26,17 @@ nav_order: 4
 
 ## Testing Tools
 
+- [Equalify.App (GPL)](https://equalify.app) - Open Source automated accessibility auditing tool
 - [axe DevTools (MPL 2.0)](https://www.deque.com/axe/) - In-browser accessibility scanner by Deque
-- [WAVE Extension (Proprietar - Free)](https://wave.webaim.org/extension/) - WebAIM's browser extension for evaluating web accessibility
+- [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
+- [WAVE Extension (Proprietary - Free)](https://wave.webaim.org/extension/) - WebAIM's browser extension for evaluating web accessibility
 - [Lighthouse (Apache 2.0)](https://developers.google.com/web/tools/lighthouse) - Chrome DevTools audit for performance, SEO, and accessibility
 - [Accessibility Insights (MIT License)](https://accessibilityinsights.io/) - Microsoft's suite for accessibility testing on web and Windows
-- [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
 - [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [WCAG-EM Report Tool (W3C License)](https://www.w3.org/WAI/eval/report-tool/) - Helps create structured WCAG conformance evaluation reports
 - [Equal Access Toolkit (Apache 2.0)](https://www.ibm.com/able/toolkit) - IBM’s framework and resources for inclusive design
 - [APCA Contrast Calculator (W3C License)](https://www.myndex.com/APCA/) - Perceptual contrast algorithm for modern UI color systems
-- [Equalify.App (GPL)](https://equalify.app) - Automated accessibility auditing tool with visual and code insights
-- [Editoria11y (GPL)](https://editoria11y.thoughtbot.com) - Inline accessibility checker designed for CMS content editors
+- [Editoria11y (GPL)](https://editorially.thoughtbot.com) - Inline accessibility checker designed for CMS content editors
 
 ## Mobile Accessibility Testing Tools
 
