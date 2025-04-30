@@ -26,8 +26,6 @@ nav_order: 4
 
 ## Testing Tools
 
-## Testing Tools
-
 - [axe DevTools (MPL 2.0)](https://www.deque.com/axe/) - In-browser accessibility scanner by Deque
 - [WAVE Extension (Proprietar - Free)](https://wave.webaim.org/extension/) - WebAIM's browser extension for evaluating web accessibility
 - [Lighthouse (Apache 2.0)](https://developers.google.com/web/tools/lighthouse) - Chrome DevTools audit for performance, SEO, and accessibility
