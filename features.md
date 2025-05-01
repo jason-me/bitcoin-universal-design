@@ -6,9 +6,9 @@ nav_order: 2
 
 # Accessibility Features for Bitcoin Applications
 
-The table below shows how accessibility features designed for specific users create benefits for everyone:
+The table below shows how accessibility features designed for specific users can create benefits for everyone:
 
-| Accessibility Feature | Who It Helps First | How It Helps Everyone |
+| **Accessibility Feature** | **Who It Helps First** | **How It Helps Everyone** |
 |-----------------------|--------------------|-----------------------|
 | **Captions & Visual Alerts** | Deaf or hard-of-hearing users | Quiet or noisy environments, faster information parsing |
 | **Voice Control / Keyboard Nav** | Limited mobility | Hands-free convenience, power-user efficiency |
