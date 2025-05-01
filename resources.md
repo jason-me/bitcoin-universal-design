@@ -45,7 +45,7 @@ nav_order: 4
 
 ## Mobile Accessibility Testing Tools
 
-- [Accessibility Scanner (Android, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device
+d, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device- [Accessibility Scanner (Androi
 - [Accessibility Test Framework for Android (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used in Espresso and Robolectric to automate accessibility checks during Android app testing
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility/accessibility-inspector) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
@@ -66,11 +66,11 @@ nav_order: 4
 
 - [Bitcoin Design Guide](https://bitcoin.design/guide/)
 - [Bitcoin UI Kit](https://www.figma.com/community/file/916680391812923706/bitcoin-ui-kit)
-- [Daily sending wallet - reference design](https://bitcoin.design/guide/daily-spending-wallet/)
+- [Daily spending wallet - reference design](https://bitcoin.design/guide/daily-spending-wallet/)
 
 ## Recommended Blogs & Reading
 
-- [W3C/WAI - The Business Case for Digital Accesibilty](https://www.w3.org/WAI/business-case/)
+- [W3C/WAI - The Business Case for Digital Accessibilty](https://www.w3.org/WAI/business-case/)
 - [TPGi - Technical Blog](https://www.tpgi.com/technical/)
 - [Deque Systems Blog](https://www.deque.com/blog/)
 - [Adrian Roselli Blog](https://adrianroselli.com/)
