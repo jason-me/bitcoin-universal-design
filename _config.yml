@@ -25,8 +25,10 @@ just_the_docs:
   custom_css:
     - "assets/css/style.css" # Always use {{ site.baseurl }} prefix
     - "assets/js/fix-seearch-contrast.js" # Always use {{ site.baseurl }} prefix
+
 search_enabled: true
 back_to_top: true
+heading_anchors: false
 
 aux_links:
   "View on GitHub":

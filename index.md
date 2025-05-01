@@ -24,7 +24,7 @@ This guide explores how building for users with disabilities, impairments, or at
 
 This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases - people with disabilities, people in resource-constrained environments, or those with limited technical knowledge - we can create better experiences for all users.
 
-## Upcoming Workshop Times
+## Designathon Workshop Schedule
 
 <table>
     <thead>
