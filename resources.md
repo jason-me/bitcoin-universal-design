@@ -96,11 +96,7 @@ nav_order: 4
 ## Just for Fun
 
 - [Hocus Focus](https://jekyll-themes.com/hteumeuleu/hocus-focus) - A keyboard navigation horror game that teaches accessibility through challenge
-- [The Accessibility Maze](https://www.accessibilitymaze.org/) - A simulation game where you navigate the web with different disabilities
-- [Accessibilly](https://accessibilly.github.io/) - A retro-style platformer where players experience barriers faced by people with disabilities
-- [ARIA Land](https://www.digitala11y.com/aria-land/) - A humorous click-through game to explore misuse of ARIA roles
-- [Sorta11y](https://sorta11y.com/) - A card-sorting game to learn proper use of WAI-ARIA roles and landmarks
-- [What the Tag?!](https://whatthetag.com/) - A fast-paced quiz to test your HTML and ARIA knowledge (somewhat dated but fun)
+- [The Accessibility Maze](https://games.de.torontomu.ca/amaze/#/) - A simulation game where you navigate the web with different disabilities
 
 
 ## Licensing Notes
