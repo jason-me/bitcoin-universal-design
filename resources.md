@@ -81,9 +81,8 @@ nav_order: 4
 
 - [Bitcoin Design Community](https://bitcoin.design/join/)
 - [CAOS (Center for Accessibility & Open Source)](https://caos.org/)
-- [W3C Accessibility Community Group](https://www.w3.org/community/accessibility/)
+- [W3C Web Accessibility Initiative](https://www.w3.org/WAI/)
 - [Open Source Design](https://opensourcedesign.net/)
-- [FOSS United Accessibility Group](https://fossunited.org/)
 
 
 ## Bitcoin-Focused Accessibility Projects & Bounties
