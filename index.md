@@ -46,32 +46,34 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
     </thead>
     <tbody>
         <tr>
-            <td>[Intro Workshop](https://github.com/BitcoinDesign/Meta/issues/780)</td>
+            <td><a href="https://github.com/BitcoinDesign/Meta/issues/780">Intro Workshop</a></td>
             <td>Tuesday May 6, 17:00</td>
             <td><span aria-hidden="true">🧠</span> Overview</td>
         </tr>
         <tr>
-            <td>[Workshop 1: Use Cases + Assistive Tech](https://github.com/BitcoinDesign/Meta/issues/788)</td>
+            <td><a href="https://github.com/BitcoinDesign/Meta/issues/788">Workshop 1: Use Cases + Assistive Tech</a></td>
             <td>Thursday May 15, 13:00</td>
             <td><span aria-hidden="true">🌐</span> GAAD</td>
         </tr>
         <tr>
-            <td>[Accessibility Office Hours 1](https://github.com/BitcoinDesign/Meta/issues/784)</td>
+            <td><a href="https://github.com/BitcoinDesign/Meta/issues/784">Accessibility Office Hours 1</a></td>
             <td>Thursday May 15, 15:00</td>
             <td><span aria-hidden="true">💬</span> Q&A</td>
         </tr>
         <tr>
-            <td>[Workshop 2: Testing & Design Patterns](https://github.com/BitcoinDesign/Meta/issues/785)</td>
+            <td><a href="https://github.com/BitcoinDesign/Meta/issues/785">Workshop 2: Testing & Design Patterns</a></td>
             <td>Thursday May 15, 15:00</td>
             <td><span aria-hidden="true">🌐</span> GAAD</td>
         </tr>
         <tr>
-            <td>[Accessibility Office Hours 2]()</td>
+            <td>Accessibility Office Hours 2</td>
             <td>Thursday May 15, 21:00</td>
             <td><span aria-hidden="true">💬</span> Q&A</td>
         </tr>
     </tbody>
 </table>
+
+<a href="principles.html">Get Started with Core Principles →</a>
 
 [Get Started with Core Principles →](principles.html)
 
