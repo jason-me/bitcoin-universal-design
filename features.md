@@ -10,11 +10,11 @@ The table below shows how accessibility features designed for specific users can
 
 | **Accessibility Feature** | **Who It Helps First** | **How It Helps Everyone** |
 |-----------------------|--------------------|-----------------------|
-| **Captions & Visual Alerts** | Deaf or hard-of-hearing users | Quiet or noisy environments, faster information parsing |
+| **Captions & Transcripts** | Deaf or hard-of-hearing users | Quiet or noisy environments, faster information parsing |
 | **Voice Control / Keyboard Nav** | Limited mobility | Hands-free convenience, power-user efficiency |
 | **High Contrast / Text Size** | Vision impairments | Sunlight use, aging eyes, general readability |
 | **Simple UI & Terminology** | Cognitive impairments | Reduces mistakes, speeds up onboarding |
-| **Colorblind-friendly design** | Colorblind users | Clearer risk states for everyone |
+| **Colorblind-friendly design** | Colorblind users | Clearer and more distinguishable for everyone |
 | **Larger tap targets / gestures** | Motor impairments | Fewer mis-taps on mobile, faster transactions |
 | **Offline & Low-bandwidth Support** | Remote or resource-constrained users | Global access, better performance everywhere |
 
