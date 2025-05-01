@@ -10,19 +10,23 @@ nav_order: 4
 
 - [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) - Official success criteria and techniques
 - [Accessible Design Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/) - Key concepts from W3C
-- [Bitcoin Design Guide](https://bitcoin.design/) - Community resource for Bitcoin UX
+- [Bitcoin Design Guide - Accessibility](https://bitcoin.design/guide/designing-products/accessibility/) - Community resource for Bitcoin UX
 
 ## Assistive Technologies to Be Aware Of
 
 ### Screen Readers
-- [NVDA (Windows)](https://www.nvaccess.org/) - Free screen reader for Windows
-- VoiceOver - Built into macOS and iOS
-- JAWS - Professional screen reader for Windows
+
+- [NVDA (Windows)](https://www.nvaccess.org/) - Free and open-source screen reader for Windows
+- [VoiceOver (macOS & iOS)](https://support.apple.com/guide/iphone/turn-on-and-practice-voiceover-iph3e2e415f/ios) - Built-in screen reader on Apple devices
+- [TalkBack (Android)](https://support.google.com/accessibility/android/answer/6007100) - Built-in screen reader for Android devices
+- [JAWS (Windows)](https://www.freedomscientific.com/products/software/jaws/) - Commercial screen reader with advanced features for Windows
+
 
 ### Other Assistive Tech
-- Screen Magnifiers: ZoomText, browser zoom tools
-- Speech Input: Dragon NaturallySpeaking, native voice control on mobile
-- Alternative Input Devices: Switch controls, eye tracking, keyboard-only setups
+- **Screen Magnifiers:** [ZoomText](https://www.zoomtext.com/) and built-in browser/system zoom tools for users with low vision
+- **Speech Input:** [Dragon NaturallySpeaking](https://www.nuance.com/dragon.html) and native voice control features on iOS, Android, Windows, and macOS
+- **Alternative Input Devices:** Switch controls, eye tracking systems (like [Tobii](https://www.tobii.com/)), and keyboard-only navigation setups for users with motor impairments
+
 
 ## Testing Tools
 
@@ -83,9 +87,8 @@ nav_order: 4
 - [A11Y Project](https://www.a11yproject.com/)
 - [Inclusive Design 24](https://inclusivedesign24.org/)
 
-## Bitcoin-Focused Bounties & Projects
+## Bitcoin-Focused Accessibility Projects & Bounties
 
-- [Bitcoin Design Guide - Accessibility](https://bitcoin.design/guide/designing-products/accessibility/)
 - [Bitcoin Design - Accessibility fix hit list](https://github.com/BitcoinDesign/Meta/issues/516)
 - [Zeus Bounties](https://github.com/ZeusLN/zeus/blob/master/docs/Bounties.md#accessibility-fixes)
 - [Sphinx Chat Bounty Work](https://github.com/stakwork/sphinx-tribes-frontend/issues/1040)
@@ -93,7 +96,13 @@ nav_order: 4
 
 ## Just for Fun
 
-- [Hocus Focus - A keyboard navigation horror game.](https://jekyll-themes.com/hteumeuleu/hocus-focus)
+- [Hocus Focus](https://jekyll-themes.com/hteumeuleu/hocus-focus) - A keyboard navigation horror game that teaches accessibility through challenge
+- [The Accessibility Maze](https://www.accessibilitymaze.org/) - A simulation game where you navigate the web with different disabilities
+- [Accessibilly](https://accessibilly.github.io/) - A retro-style platformer where players experience barriers faced by people with disabilities
+- [ARIA Land](https://www.digitala11y.com/aria-land/) - A humorous click-through game to explore misuse of ARIA roles
+- [Sorta11y](https://sorta11y.com/) - A card-sorting game to learn proper use of WAI-ARIA roles and landmarks
+- [What the Tag?!](https://whatthetag.com/) - A fast-paced quiz to test your HTML and ARIA knowledge (somewhat dated but fun)
+
 
 ## Licensing Notes
 

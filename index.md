@@ -29,9 +29,9 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
 <table>
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Time (UTC)</th>
-            <th>Type</th>
+            <th><stron>Title</strong></th>
+            <th><strong>Time (UTC)</strong></th>
+            <th><strong>Type</strong></th>
         </tr>
     </thead>
     <tbody>

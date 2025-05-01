@@ -40,7 +40,7 @@ In Bitcoin applications, poor usability isn't just inconvenient - it's dangerous
 
 ## Design Philosophy Shift
 
-| Traditional Approach | Edge-Driven Approach |
+| **Traditional Approach** | **Edge-Driven Approach** |
 |----------------------|---------------------|
 | Design for the "average user" | Recognize there is no average user |
 | Add accessibility features later | Start with the most constrained use cases |
