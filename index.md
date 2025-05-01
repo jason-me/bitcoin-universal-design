@@ -11,7 +11,7 @@ permalink: /
 
 > "Designing for the extremes in human variation often improves usability for everyone."
 
-This guide explores how building for users with disabilities, impairments, or atypical environments often leads to better Bitcoin experiences for everyone which in turn leads to increased adoption. In Bitcoin applications, where usability is frequently sacrificed for security or privacy, this heuristic helps create more thoughtful, human-centered products.
+This guide explores how building for users with disabilities, impairments, or atypical environments often leads to better Bitcoin experiences for everyone which in turn leads to increased adoption. In Bitcoin applications, where usability is frequently sacrificed for security or privacy, this heuristic helps create more thoughtful, human-centered interactions.
 
 ## Why Accessibility Matters for Bitcoin
 
