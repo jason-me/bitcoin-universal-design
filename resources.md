@@ -80,7 +80,7 @@ nav_order: 4
 ## Communities
 
 - [Bitcoin Design Community](https://bitcoin.design/join/)
-- [CAOS (Critical Accessibility Open Source)](https://github.com/CriticalA11y/caos)
+- [CAOS (Center for Accessibility & Open Source)](https://caos.org/)
 - [W3C Accessibility Community Group](https://www.w3.org/community/accessibility/)
 - [Open Source Design](https://opensourcedesign.net/)
 - [FOSS United Accessibility Group](https://fossunited.org/)
