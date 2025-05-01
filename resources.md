@@ -70,7 +70,7 @@ nav_order: 4
 
 ## Recommended Blogs & Reading
 
-- [The Case for Accessibility Bounties in FOSS (Presentation) - Jason Hester](https://stacker.news/items/908947)
+- [Jason Hester (Presentation) - The Case for Accessibility Bounties in FOSS](https://stacker.news/items/912324)
 - [W3C/WAI - The Business Case for Digital Accessibilty](https://www.w3.org/WAI/business-case/)
 - [TPGi - Technical Blog](https://www.tpgi.com/technical/)
 - [Deque Systems Blog](https://www.deque.com/blog/)
