@@ -63,10 +63,6 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
     </tbody>
 </table>
 
-<a href="principles.html">Get Started with Core Principles →</a>
-
-[Get Started with Core Principles →](principles.html)
-
 [Get Started with Core Principles →](principles.html)
 
 ---
