@@ -31,6 +31,7 @@ nav_order: 4
 ## Testing Tools
 
 - [a11y-tools – Ian Lloyd](https://a11y-tools.com/) - Curated directory of accessibility checkers, simulators, color tools, and bookmarklets
+- [APCA Contrast Calculator (W3C License)](https://github.com/Myndex) - Perceptual contrast algorithm for modern UI color systems
 - [Equalify.App (GPL)](https://equalify.app) - Open Source automated accessibility auditing tool
 - [axe DevTools (MPL 2.0)](https://www.deque.com/axe/) - In-browser accessibility scanner by Deque
 - [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
@@ -40,15 +41,13 @@ nav_order: 4
 - [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [WCAG-EM Report Tool (W3C License)](https://www.w3.org/WAI/eval/report-tool/) - Helps create structured WCAG conformance evaluation reports
 - [Equal Access Toolkit (Apache 2.0)](https://www.ibm.com/able/toolkit) - IBM’s framework and resources for inclusive design
-- [APCA Contrast Calculator (W3C License)](https://github.com/Myndex) - Perceptual contrast algorithm for modern UI color systems
-- [Editoria11y (GPL)](https://editorially.thoughtbot.com) - Inline accessibility checker designed for CMS content editors
 
 
 ## Mobile Accessibility Testing Tools
 
 - [Accessibility Scanner (Android, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device
 - [Accessibility Test Framework for Android (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used in Espresso and Robolectric to automate accessibility checks during Android app testing
-- [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
+- [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility/accessibility-inspector) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
 
 
@@ -59,33 +58,33 @@ nav_order: 4
 - [jest-axe (MIT License)](https://github.com/nickcolley/jest-axe) - Jest matcher that integrates axe-core for unit testing accessibility
 - [cypress-axe (MIT License)](https://github.com/component-driven/cypress-axe) - Integrates axe-core into Cypress end-to-end test flows
 - [axe-playwright (MPL 2.0)](https://github.com/abhinaba-ghosh/axe-playwright) - Playwright integration for automated accessibility scans using axe-core
-- [tota11y (MIT License)](https://khan.github.io/tota11y/) - A visual overlay tool that helps visualize how screen readers interpret a page
-- [Tenon.io (Proprietary)](https://tenon.io/) - API-based accessibility testing tool for integration into dev workflows
 - [HTML_CodeSniffer (BSD License)](https://squizlabs.github.io/HTML_CodeSniffer/) - Client-side script for identifying WCAG violations in HTML
 - [The A11y Machine (MIT License)](https://github.com/liip/TheA11yMachine) - Automated tool that crawls websites and checks them for accessibility issues
 
 
 ## Bitcoin-Specific Resources
 
-- [Open Bitcoin Design Community](https://github.com/BitcoinDesign/Meta)
+- [Bitcoin Design Guide](https://bitcoin.design/guide/)
 - [Bitcoin UI Kit](https://www.figma.com/community/file/916680391812923706/bitcoin-ui-kit)
-- [Bitcoin Wallet Interaction Model](https://bitcoin.design/guide/daily-spending-wallet/wallet-interaction-model/)
+- [Daily sending wallet - reference design](https://bitcoin.design/guide/daily-spending-wallet/)
 
 ## Recommended Blogs & Reading
 
-- [TPGi - Technical Blog](https://www.tpgi.com/technical/)
 - [W3C/WAI - The Business Case for Digital Accesibilty](https://www.w3.org/WAI/business-case/)
+- [TPGi - Technical Blog](https://www.tpgi.com/technical/)
+- [Deque Systems Blog](https://www.deque.com/blog/)
 - [Adrian Roselli Blog](https://adrianroselli.com/)
 - [Scott O'Hara Blog](https://www.scottohara.me/)
-- "Universal Design for Web Applications" by Wendy Chisholm & Matt May
-- "Inclusive Design Patterns" by Heydon Pickering
-- "Design for Real Life" by Eric Meyer & Sara Wachter-Boettcher
+
 
 ## Communities
 
-- [Bitcoin Design Community](https://bitcoin.design/community/)
-- [A11Y Project](https://www.a11yproject.com/)
-- [Inclusive Design 24](https://inclusivedesign24.org/)
+- [Bitcoin Design Community](https://bitcoin.design/join/)
+- [CAOS (Critical Accessibility Open Source)](https://github.com/CriticalA11y/caos)
+- [W3C Accessibility Community Group](https://www.w3.org/community/accessibility/)
+- [Open Source Design](https://opensourcedesign.net/)
+- [FOSS United Accessibility Group](https://fossunited.org/)
+
 
 ## Bitcoin-Focused Accessibility Projects & Bounties
 
