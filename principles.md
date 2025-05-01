@@ -52,9 +52,9 @@ In Bitcoin applications, poor usability isn't just inconvenient - it's dangerous
 ---
 
 > “Today, I am essentially paralyzed. I am fed through a tube, and my breathing is assisted through another tube. I operate the computer using a commercial eyetracker system. It also has a speech synthesizer, so this is my voice now. I spend all day in my power wheelchair. I worked up an interface using an arduino so that I can adjust my wheelchair’s position using my eyes.
-
+>
 >It has been an adjustment, but my life is not too bad. I can still read, listen to music, and watch TV and movies. I recently discovered that I can even write code. It’s very slow, probably 50 times slower than I was before. But I still love programming and it gives me goals. Currently I’m working on something Mike Hearn suggested, using the security features of modern processors, designed to support “Trusted Computing”, to harden Bitcoin wallets. It’s almost ready to release. I just have to do the documentation.” 
-
+>
 >“That’s my story. I’m pretty lucky overall. Even with the ALS, my life is very satisfying. But my life expectancy is limited. ”
-
-****Hal Finney (1956 – 2014)**** 
+>
+<cite>[***Hal Finney (1956 – 2014)***](https://nakamotoinstitute.org/library/bitcoin-and-me/)</cite> 
