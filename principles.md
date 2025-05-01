@@ -57,4 +57,4 @@ In Bitcoin applications, poor usability isn't just inconvenient - it's dangerous
 >
 >“That’s my story. I’m pretty lucky overall. Even with the ALS, my life is very satisfying. But my life expectancy is limited. ”
 >
-<cite>[***Hal Finney (1956 – 2014)***](https://nakamotoinstitute.org/library/bitcoin-and-me/)</cite> 
+<cite>[***Bitcoin and Me***](https://nakamotoinstitute.org/library/bitcoin-and-me/) ***- Hal Finney (1956 – 2014)***</cite> 
