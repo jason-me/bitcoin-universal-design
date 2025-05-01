@@ -24,7 +24,7 @@ The table below shows how accessibility features designed for specific users can
 
 - Use sufficient contrast ratios (at least 4.5:1)
 - Don't rely solely on color to convey information
-- Support text resizing without breaking layouts
+- Support text resizing and reflow without breaking layouts
 - Test with screen readers for semantic structure
 
 ### 2. Cognitive Accessibility
@@ -36,16 +36,16 @@ The table below shows how accessibility features designed for specific users can
 
 ### 3. Motor Accessibility
 
-- Ensure interactive elements are at least 44×44 pixels
-- Provide keyboard navigation options
-- Minimize the need for precise gestures
+- Ensure touch targets are at least 44×44 pixels
+- Provide keyboard-only navigation options
+- Minimize the need for precise gestures (e.g. dragging)
 - Include confirmation steps for irreversible actions
 
 ### 4. Hearing Accessibility
 
-- Include visual alternatives to audio cues
-- Provide captions for video content
-- Use multiple notification methods
+- Include visual alternatives to audio cues (such as audio descriptions)
+- Provide captions and transcripts for video content
+- Use multi-sensory notification methods
 
 ### 5. Situational Constraints
 
