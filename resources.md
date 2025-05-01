@@ -45,7 +45,7 @@ nav_order: 4
 
 ## Mobile Accessibility Testing Tools
 
-d, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device- [Accessibility Scanner (Androi
+- [Accessibility Scanner (Android, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device
 - [Accessibility Test Framework for Android (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used in Espresso and Robolectric to automate accessibility checks during Android app testing
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility/accessibility-inspector) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
@@ -70,6 +70,7 @@ d, Proprietary)](https://play.google.com/store/apps/details?id=com.google.androi
 
 ## Recommended Blogs & Reading
 
+- [The Case for Accessibility Bounties in FOSS (Presentation) - Jason Hester](https://stacker.news/items/908947)
 - [W3C/WAI - The Business Case for Digital Accessibilty](https://www.w3.org/WAI/business-case/)
 - [TPGi - Technical Blog](https://www.tpgi.com/technical/)
 - [Deque Systems Blog](https://www.deque.com/blog/)
