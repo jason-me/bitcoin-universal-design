@@ -32,8 +32,8 @@ The table below shows how accessibility features designed for specific users can
 - Use recognizable symbols, font weight, style, and other visual indicators alongside color coding to indicate information such as transaction status ([SC 1.4.1](https://www.w3.org/TR/WCAG22/#use-of-color))
 
 #### Support text resizing and reflow without breaking layouts
-    - Ensure addresses transaction details, and other important content remains fully visible and readable when users zoom to 200% ([SC 1.4.4](https://www.w3.org/TR/WCAG22/#resize-text))
-    - When users zoom to 400% content structure reflows without loss of information or functionality ([SC 1.4.10](https://www.w3.org/TR/WCAG22/#reflow))
+- Ensure addresses transaction details, and other important content remains fully visible and readable when users zoom to 200% ([SC 1.4.4](https://www.w3.org/TR/WCAG22/#resize-text))
+- When users zoom to 400% content structure reflows without loss of information or functionality ([SC 1.4.10](https://www.w3.org/TR/WCAG22/#reflow))
 
 - **Test with screen readers for semantic structure**
     - Structure wallet dashboard elements within proper headings, regions, and semantic markup for easy navigation ([SC 1.3.1](https://www.w3.org/TR/WCAG22/#info-and-relationships))
