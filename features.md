@@ -18,14 +18,14 @@ The table below shows how accessibility features designed for specific users can
 | **Larger tap targets / gestures** | Motor impairments | Fewer mis-taps on mobile, faster transactions |
 | **Offline & Low-bandwidth Support** | Remote or resource-constrained users | Global access, better performance everywhere |
 
-## Implementation Guidelines
+## Accessible Feature Implementation
 
-## 1. Visual Accessibility
+### 1. Visual Accessibility
 
-- **Use sufficient contrast ratios**
-    - Make sure text like addresses and balances have adequate contrast against backgrounds
-        - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
-        - [APCA](https://www.myndex.com/APCA/) Lc 60+ for most text, recommended for Bitcoin interfaces with extended reading
+####**Use sufficient contrast ratios**####
+- Make sure text like addresses and balances have adequate contrast against backgrounds
+    - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
+    - [APCA](https://www.myndex.com/APCA/) Lc 60+ for most text, recommended for Bitcoin interfaces with extended reading
     
 
 - **Don't rely solely on color to convey information**
