@@ -4,27 +4,27 @@ title: Workshop Guide
 nav_order: 3
 ---
 
-# Workshop Guide
+# Workshop Guide (TODO)
 
 The following materials can be used to run a workshop or hackathon focused on accessible Bitcoin application design.
 
-## Workshop Structure (3 hours)
+## Workshop Structure 
 
-### 1. Introduction (30 min)
+### 1. Introduction
 
 - Present the core heuristic
 - Review why accessibility matters for Bitcoin
 - Share examples of universal design benefits
 
-### 2. Persona Development (45 min)
+### 2. Persona Development
 
 Have teams develop personas that represent users at the "edges":
-- A person with low vision using a screen reader
-- Someone in a region with intermittent internet access
-- An older adult with limited technical experience
+- A person who is blind using a screen reader
+- Someone who is deaf in a region with intermittent internet access
+- An older adult with low vision and limited technical experience
 - A person with motor impairments using keyboard navigation
 
-### 3. Design Challenge (60 min)
+### 3. Design Challenge
 
 Ask teams to redesign a common Bitcoin wallet function for their persona:
 - Wallet backup and recovery
@@ -32,7 +32,7 @@ Ask teams to redesign a common Bitcoin wallet function for their persona:
 - Managing multiple accounts
 - Setting security preferences
 
-### 4. Present & Critique (45 min)
+### 4. Present & Critique
 
 Teams present their designs, focusing on:
 - How the design solves for the specific user
@@ -51,17 +51,17 @@ For a longer format hackathon, challenge teams to create accessible Bitcoin tool
 ## Evaluation Criteria
 
 Score projects based on:
-- **Inclusivity**: How well does it address the needs of users at the margins?
-- **Universal Benefit**: How does solving for edge cases improve the experience for everyone?
+- **Inclusive Design**: How well does it address the needs of users at the margins?
+- **Universal Design**: How does solving for edge cases improve the experience for everyone?
 - **Technical Feasibility**: Can it be implemented while maintaining Bitcoin's security properties?
 - **Innovation**: Does it take a novel approach to solving accessibility challenges?
 
 ## Takeaways for Teams
 
 - Test with edge-case users (or personas): new to Bitcoin, older, colorblind, screen reader users
-- Treat usability as security armor
-- Ask: "If this design was the only thing standing between someone and losing their life savings, would it hold up?"
-- Make your tools survivable, not just functional
+- Treat usability as a key part of enabling bullet-proof security
+- Ask: "If this design was the only thing standing between someone and losing their life savings, would it hold up?" -or- "Could Hal Finney use this?"
+- Make your tools accessible and usable, while maintaining security and privacy
 
 ## Slogan to Remember
 
