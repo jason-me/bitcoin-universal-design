@@ -20,7 +20,7 @@ The table below shows how accessibility features designed for specific users can
 
 ## Accessible Feature Implementation
 
-### <ins>Visual Accessibility</ins>
+### Visual Accessibility
 
 **Use sufficient contrast ratios**
 - Make sure text like addresses and balances have adequate contrast against backgrounds
