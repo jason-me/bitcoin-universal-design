@@ -20,8 +20,8 @@ The table below shows how accessibility features designed for specific users can
 
 ## Visual Accessibility
 
-**Use sufficient contrast ratios**
-- Make sure text like addresses and balances have adequate contrast against backgrounds
+### **Use sufficient contrast ratios**
+- Make sure text like addresses and balances and non-text meaningful graphics have adequate contrast against backgrounds
     - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
     - [APCA](https://www.myndex.com/APCA/) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
     
@@ -33,9 +33,9 @@ The table below shows how accessibility features designed for specific users can
 - Ensure addresses transaction details, and other important content remains fully visible and readable when users zoom to 200% ([SC 1.4.4](https://www.w3.org/TR/WCAG22/#resize-text))
 - When users zoom to 400% content structure reflows without loss of information or functionality ([SC 1.4.10](https://www.w3.org/TR/WCAG22/#reflow))
 
-- **Test with screen readers for semantic structure**
-    - Structure wallet dashboard elements within proper headings, regions, and semantic markup for easy navigation ([SC 1.3.1](https://www.w3.org/TR/WCAG22/#info-and-relationships))
-    - Ensure links, buttons, and wallet controls have a name, role, and appropriate value to ensure screen reader users understand the controls name, state, and purpose ([SC 4.1.2](https://www.w3.org/TR/WCAG22/#name-role-value))
+### **Test with screen readers for semantic structure**
+- Structure wallet dashboard elements within proper headings, regions, and semantic markup for easy navigation ([SC 1.3.1](https://www.w3.org/TR/WCAG22/#info-and-relationships))
+- Ensure links, buttons, and wallet controls have a name, role, and appropriate value to ensure screen reader users understand the controls name, state, and purpose ([SC 4.1.2](https://www.w3.org/TR/WCAG22/#name-role-value))
 
 ## 2. Cognitive Accessibility
 
