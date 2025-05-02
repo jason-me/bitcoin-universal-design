@@ -25,13 +25,13 @@ The table below shows how accessibility features designed for specific users can
 #### **Use sufficient contrast ratios**
 - Make sure text like addresses and balances have adequate contrast against backgrounds
     - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
-    - [APCA](https://www.myndex.com/APCA/) Lc 60+ for most text, recommended for Bitcoin interfaces with extended reading
+    - [APCA](https://www.myndex.com/APCA/) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
     
 
-- **Don't rely solely on color to convey information**
-    - Use recognizable symbols, font weight, style, and other visual indicators alongside color coding to indicate information such as transaction status ([SC 1.4.1](https://www.w3.org/TR/WCAG22/#use-of-color))
+ #### **Don't rely solely on color to convey information**
+- Use recognizable symbols, font weight, style, and other visual indicators alongside color coding to indicate information such as transaction status ([SC 1.4.1](https://www.w3.org/TR/WCAG22/#use-of-color))
 
-- **Support text resizing and reflow without breaking layouts**
+#### Support text resizing and reflow without breaking layouts
     - Ensure addresses transaction details, and other important content remains fully visible and readable when users zoom to 200% ([SC 1.4.4](https://www.w3.org/TR/WCAG22/#resize-text))
     - When users zoom to 400% content structure reflows without loss of information or functionality ([SC 1.4.10](https://www.w3.org/TR/WCAG22/#reflow))
 
