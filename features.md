@@ -20,9 +20,9 @@ The table below shows how accessibility features designed for specific users can
 
 ## Accessible Feature Implementation
 
-### 1. Visual Accessibility
+### Visual Accessibility
 
-####**Use sufficient contrast ratios**####
+####Use sufficient contrast ratios####
 - Make sure text like addresses and balances have adequate contrast against backgrounds
     - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
     - [APCA](https://www.myndex.com/APCA/) Lc 60+ for most text, recommended for Bitcoin interfaces with extended reading
