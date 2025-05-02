@@ -28,7 +28,7 @@ The table below shows how accessibility features designed for specific users can
     - [APCA](https://www.myndex.com/APCA/) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
     
 
- #### **Don't rely solely on color to convey information**
+#### **Don't rely solely on color to convey information**
 - Use recognizable symbols, font weight, style, and other visual indicators alongside color coding to indicate information such as transaction status ([SC 1.4.1](https://www.w3.org/TR/WCAG22/#use-of-color))
 
 #### Support text resizing and reflow without breaking layouts
