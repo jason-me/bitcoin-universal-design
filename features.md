@@ -18,9 +18,7 @@ The table below shows how accessibility features designed for specific users can
 | **Larger tap targets / gestures** | Motor impairments | Fewer mis-taps on mobile, faster transactions |
 | **Offline & Low-bandwidth Support** | Remote or resource-constrained users | Global access, better performance everywhere |
 
-## Accessible Feature Implementation
-
-### Visual Accessibility
+## Visual Accessibility
 
 **Use sufficient contrast ratios**
 - Make sure text like addresses and balances have adequate contrast against backgrounds
@@ -28,10 +26,10 @@ The table below shows how accessibility features designed for specific users can
     - [APCA](https://www.myndex.com/APCA/) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
     
 
-#### **Don't rely solely on color to convey information**
+### **Don't rely solely on color to convey information**
 - Use recognizable symbols, font weight, style, and other visual indicators alongside color coding to indicate information such as transaction status ([SC 1.4.1](https://www.w3.org/TR/WCAG22/#use-of-color))
 
-#### Support text resizing and reflow without breaking layouts
+### Support text resizing and reflow without breaking layouts
 - Ensure addresses transaction details, and other important content remains fully visible and readable when users zoom to 200% ([SC 1.4.4](https://www.w3.org/TR/WCAG22/#resize-text))
 - When users zoom to 400% content structure reflows without loss of information or functionality ([SC 1.4.10](https://www.w3.org/TR/WCAG22/#reflow))
 
