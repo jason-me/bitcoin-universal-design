@@ -156,4 +156,19 @@ body > * {
 .search-result-highlight {
   color: white !important; }
 
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 1em;
+  border-left: 4px solid #888;
+  background: #f9f9f9;
+  color: #333;
+  font-style: italic; }
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    border-left: 4px solid #bbb;
+    background: #1e1e1e;
+    color: #ddd; } }
+
 /*# sourceMappingURL=style.css.map */
