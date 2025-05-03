@@ -102,10 +102,10 @@ nav_order: 4
 ## Licensing Notes
 
 FOSS a11y tools come with a range of licenses:  
-MIT, GNU GPL, Apache 2.0, W3C Software License.
+MIT, GNU GPL, MPL, Apache 2.0, W3C Software License, etc.
 
 ---
 
 ## Contact
 
-Got a tool or resource we should list? If you'd like to contribute to this guide or have questions about implementing these principles [Open an issue](https://github.com/jason-me/bitcoin-universal-design/issues).ß
+Got a tool or resource we should list? If you'd like to contribute to this guide or have questions about implementing these principles [Open an issue](https://github.com/jason-me/bitcoin-universal-design/issues).
