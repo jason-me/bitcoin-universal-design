@@ -4,7 +4,7 @@ title: Workshop Guide
 nav_order: 3
 ---
 
-# Workshop Guide (TODO)
+# Workshop Guide
 
 The following materials can be used to run a workshop or hackathon focused on accessible Bitcoin application design.
 
