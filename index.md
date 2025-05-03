@@ -21,18 +21,17 @@ This guide explores how building for users with disabilities, impairments, or at
 - **Accessibile design is resilient design**: Tools that work across diverse abilities, devices, and environments are often more robust and reliable in general
 - **Hal Finney had a disability**: Hal was diagnoesd with ALS in 2009 shortly after receiving the first bitcoin transaction and starting to work with Satoshi. Despite his diagnosis, he continued working on the project until his untimely passing in 2014.
 
-## Our Approach
-
-This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases, people with disabilities, people in resource-constrained environments, or those with limited technical knowledge we can create better experiences for all users. Good interaction design is accessible to a wide range of users in diverse contexts.
-
 > “Today, I am essentially paralyzed. I am fed through a tube, and my breathing is assisted through another tube. I operate the computer using a commercial eyetracker system. It also has a speech synthesizer, so this is my voice now. I spend all day in my power wheelchair. I worked up an interface using an arduino so that I can adjust my wheelchair’s position using my eyes.
 >
 >It has been an adjustment, but my life is not too bad. I can still read, listen to music, and watch TV and movies. I recently discovered that I can even write code. It’s very slow, probably 50 times slower than I was before. But I still love programming and it gives me goals. Currently I’m working on something Mike Hearn suggested, using the security features of modern processors, designed to support “Trusted Computing”, to harden Bitcoin wallets. It’s almost ready to release. I just have to do the documentation.” 
 >
 >“That’s my story. I’m pretty lucky overall. Even with the ALS, my life is very satisfying. But my life expectancy is limited. ”
 >
-<cite>[***Bitcoin and Me***](https://nakamotoinstitute.org/library/bitcoin-and-me/) ***- Hal Finney (2013)***</cite> 
+<cite>[***Bitcoin and Me***](https://nakamotoinstitute.org/library/bitcoin-and-me/) ***- Hal Finney (2013)***</cite> ß
 
+## Our Approach
+
+This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases, people with disabilities, people in resource-constrained environments, or those with limited technical knowledge we can create better experiences for all users. Good interaction design is accessible to a wide range of users in diverse contexts.
 
 ---
 
