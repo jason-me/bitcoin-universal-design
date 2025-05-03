@@ -6,11 +6,21 @@ nav_order: 4
 
 # Resources
 
-## Standards & Guidelines
+## Guidelines & Standards
 
 - [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) - Official success criteria and techniques
 - [Accessible Design Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/) - Key concepts from W3C
 - [Bitcoin Design Guide - Accessibility](https://bitcoin.design/guide/designing-products/accessibility/) - Community resource for Bitcoin UX
+- [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) - Accessible Rich Internt Applications
+- [APCA](https://www.myndex.com/APCA/) - Accessible Perceptual Contrast Algorithm
+- [EN 301-549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) - Accessibility requirements for ICT products and services
+- [ISO 9241-171](https://www.iso.org/standard/39080.html) - Ergonomics of human-system interaction Part 171: Guidance on software accessibility
+
+
+## Accessible Design Pattern Examples
+
+- [WAI ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) -  Design Patterns and Examples 
+- [Scott O'Hara Code Abode](https://www.scottohara.me/code/) - Curated list of Accessibile Components, Styles, etc.
 
 ## Assistive Technologies to Be Aware Of
 
@@ -20,12 +30,15 @@ nav_order: 4
 - [VoiceOver (macOS & iOS)](https://support.apple.com/guide/iphone/turn-on-and-practice-voiceover-iph3e2e415f/ios) - Built-in screen reader on Apple devices
 - [TalkBack (Android)](https://support.google.com/accessibility/android/answer/6007100) - Built-in screen reader for Android devices
 - [JAWS (Windows)](https://www.freedomscientific.com/products/software/jaws/) - Commercial screen reader with advanced features for Windows
+- [Orca (Linux)](https://orca.gnome.org/) - Free and Open-Source Screen Reader for free and open desktops that use [Assistive Technology Service Provider Interface (AT-SPI)](https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/)
 
 
 ### Other Assistive Tech
+
 - **Screen Magnifiers:** [ZoomText](https://www.zoomtext.com/) and built-in browser/system zoom tools for users with low vision
 - **Speech Input:** [Dragon NaturallySpeaking](https://www.nuance.com/dragon.html) and native voice control features on iOS, Android, Windows, and macOS
 - **Alternative Input Devices:** Switch controls, eye tracking systems (like [Tobii](https://www.tobii.com/)), and keyboard-only navigation setups for users with motor impairments
+- **OS Accessibility Settings:** Built-in tools like VoiceOver, TalkBack, Magnifier, Sticky Keys, and color contrast adjustments on major operating systems
 
 
 ## Testing Tools
