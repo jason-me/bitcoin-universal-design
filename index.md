@@ -11,7 +11,7 @@ permalink: /
 
 > "Designing for the extremes in human variation often improves usability for everyone."
 
-This guide explores how building for users with disabilities, impairments, or atypical environments often leads to better Bitcoin experiences for everyone which in turn leads to increased adoption. In Bitcoin applications, where usability is frequently sacrificed for security or privacy, this heuristic helps create more thoughtful, human-centered interactions.
+This guide explores how building for users with disabilities, impairments, or atypical environments can lead to increased global adoption and better Bitcoin experiences for everyone. In Bitcoin applications, where usability is sometimes sacrificed for security or privacy, this heuristic helps create more thoughtful, human-centered interactions.
 
 ## Why Accessibility Matters for Bitcoin
 
@@ -22,7 +22,11 @@ This guide explores how building for users with disabilities, impairments, or at
 
 ## Our Approach
 
-This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases - people with disabilities, people in resource-constrained environments, or those with limited technical knowledge - we can create better experiences for all users.
+This guide offers practical ways to apply accessibility principles to Bitcoin application design. By focusing on edge cases, people with disabilities, people in resource-constrained environments, or those with limited technical knowledge we can create better experiences for all users. Good interaction design is accessible to a wide range of users in diverse contexts.
+
+> "Solve for one. Extend to many."
+
+---
 
 ## Designathon Workshop Schedule
 
@@ -63,8 +67,7 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
     </tbody>
 </table>
 
-[Get Started with Core Principles →](principles.html)
-
 ---
 
-> "Solve for one. Extend to many."
+[Get Started with Core Principles →](principles.html)
+
