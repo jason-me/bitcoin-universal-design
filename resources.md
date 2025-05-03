@@ -38,7 +38,7 @@ nav_order: 4
 - **Screen Magnifiers:** [ZoomText](https://www.zoomtext.com/) and built-in browser/system zoom tools for users with low vision
 - **Speech Input:** [Dragon NaturallySpeaking](https://www.nuance.com/dragon.html) and native voice control features on iOS, Android, Windows, and macOS
 - **Alternative Input Devices:** Switch controls, eye tracking systems (like [Tobii](https://www.tobii.com/)), and keyboard-only navigation setups for users with motor impairments
-- **OS Accessibility Settings:** Built-in tools like VoiceOver, TalkBack, Magnifier, Sticky Keys, and color contrast adjustments on major operating systems
+- **OS Accessibility Settings:** Built-in tools like VoiceOver, TalkBack, Magnifier, Sticky Keys, and color contrast adjustments on major operating systems 
 
 
 ## Testing Tools
@@ -59,6 +59,7 @@ nav_order: 4
 ## Mobile Accessibility Testing Tools
 
 - [Accessibility Scanner (Android, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device
+- [Android Accessibility Inspector App](https://github.com/jwlilly/Android-Accessibility-Inspector-App) - Front-end for connecting to and displaying the accessibility node tree provided by the [Accessibility Inspector Service](https://github.com/jwlilly/Accessibility-Inspector-Service)
 - [Accessibility Test Framework for Android (Apache 2.0)](https://github.com/google/Accessibility-Test-Framework-for-Android) - Framework used in Espresso and Robolectric to automate accessibility checks during Android app testing
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility/accessibility-inspector) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
