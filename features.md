@@ -90,23 +90,6 @@ _Best practice to ensure usability in low-resource settings where full media loa
 - Design interfaces that remain usable in bright sunlight and distracting environments ([SC 1.4.3 Contrast (Minimum)](https://www.w3.org/TR/WCAG22/#contrast-minimum), [SC 1.4.11 Non-Text Contrast](https://www.w3.org/TR/WCAG22/#non-text-contrast))  
 _Ensures text, icons, and essential controls remain visible and usable under harsh visual conditions._
 
-## Stock Images for Disability Types
-
-### Visual Disabilities
-[![Blind person walking with a white cane](https://images.unsplash.com/photo-1595075793363-9f4c20e2b1d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800)](https://unsplash.com/s/photos/blind-person)
-
-### Cognitive Disabilities  
-[![Child painting as part of autism therapy](https://images.unsplash.com/photo-1580584126903-6a6b1d6832d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800)](https://unsplash.com/s/photos/autism)
-
-### Motor Disabilities
-[![Person using a wheelchair outside](https://images.unsplash.com/photo-1614082242765-1e34b69be083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800)](https://unsplash.com/s/photos/wheelchair)
-
-### Hearing Disabilities
-[![Woman using sign language](https://images.unsplash.com/photo-1603571439546-455b305b77e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800)](https://unsplash.com/s/photos/sign-language)
-
-### Situational Disabilities
-[![Sun glare on a city street](https://images.unsplash.com/photo-1496181133206-80ce9b88a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800)](https://unsplash.com/s/photos/sun-glare)
-
 > Ask yourself, "Could Hal Finney use this?"
 
 ---
