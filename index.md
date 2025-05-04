@@ -27,7 +27,7 @@ This guide explores how building for users with disabilities, impairments, or at
 >
 >“That’s my story. I’m pretty lucky overall. Even with the ALS, my life is very satisfying. But my life expectancy is limited.”
 >
-<cite>[***Bitcoin and Me***](https://nakamotoinstitute.org/library/bitcoin-and-me/) ***- Hal Finney (2013)***</cite>ß
+<cite>[***Bitcoin and Me***](https://nakamotoinstitute.org/library/bitcoin-and-me/) ***- Hal Finney (2013)***</cite>
 
 ## Our Approach
 
