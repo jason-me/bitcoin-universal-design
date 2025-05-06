@@ -43,20 +43,27 @@ nav_order: 4
 
 ## Testing Tools
 
-- [a11y-tools – Ian Lloyd](https://a11y-tools.com/) - Curated directory of accessibility checkers, simulators, color tools, and bookmarklets
+### Color Contrast Testing Tools
+
+- [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [APCA Contrast Calculator (W3C License)](https://apcacontrast.com/) - Perceptual contrast algorithm for modern UI color systems
+- [Who Can Use](https://www.whocanuse.com/) - Website contrast tool
+- [Color Review](https://color.review/) - Website contrast tool
+- [Siege Media](https://www.siegemedia.com/contrast-ratio) - Website contrast tool
+
+### Web Accessibility Testing Tools
+
+- [a11y-tools – Ian Lloyd](https://a11y-tools.com/) - Curated directory of accessibility checkers, simulators, color tools, and bookmarklets
 - [Equalify.App (GPL)](https://equalify.app) - Open Source automated accessibility auditing tool
 - [axe DevTools (MPL 2.0)](https://www.deque.com/axe/) - In-browser accessibility scanner by Deque
 - [ARC Toolkit (Proprietary - Free)](https://www.tpgi.com/arc-platform/arc-toolkit/) - Chrome extension for quick accessibility audits by TPGi
 - [WAVE Extension (Proprietary - Free)](https://wave.webaim.org/extension/) - WebAIM's browser extension for evaluating web accessibility
 - [Lighthouse (Apache 2.0)](https://developers.google.com/web/tools/lighthouse) - Chrome DevTools audit for performance, SEO, and accessibility
-- [Accessibility Insights (MIT License)](https://accessibilityinsights.io/) - Microsoft's suite for accessibility testing on web and Windows
-- [TPGi Colour Contrast Analyzer (GPL)](https://www.tpgi.com/color-contrast-checker/) - Analyze color contrast ratios for text and UI elements
 - [WCAG-EM Report Tool (W3C License)](https://www.w3.org/WAI/eval/report-tool/) - Helps create structured WCAG conformance evaluation reports
 - [Equal Access Toolkit (Apache 2.0)](https://www.ibm.com/able/toolkit) - IBM’s framework and resources for inclusive design
 
 
-## Mobile Accessibility Testing Tools
+### Mobile Accessibility Testing Tools
 
 - [Accessibility Scanner (Android, Proprietary)](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor) - Google’s manual testing app that suggests accessibility improvements in Android apps already installed on your device
 - [Android Accessibility Inspector App (GPL)](https://github.com/jwlilly/Android-Accessibility-Inspector-App) - Front-end for connecting to and displaying the accessibility node tree provided by the [Accessibility Inspector Service](https://github.com/jwlilly/Accessibility-Inspector-Service)
@@ -64,8 +71,11 @@ nav_order: 4
 - [Xcode Accessibility Inspector (Proprietary)](https://developer.apple.com/documentation/accessibility/accessibility-inspector) - Apple’s macOS tool for inspecting and debugging accessibility in iOS and iPadOS apps
 - [Google Play Console Pre-Launch Reports (Proprietary)](https://support.google.com/googleplay/android-developer/answer/7002270) - Automated pre-release testing service that includes accessibility checks for Android apps
 
+### Desktop Testing Tools
 
-## Developer Tools & CI/CD Integrations
+- [Accessibility Insights (MIT License)](https://accessibilityinsights.io/) - Microsoft's suite for accessibility testing on web and Windows
+
+### Developer Tools & CI/CD Integrations
 
 - [eslint-plugin-jsx-a11y (MIT License)](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - ESLint plugin that surfaces accessibility issues in JSX during development
 - [Pa11y (MIT License)](https://pa11y.org/) - Command-line tool and dashboard for automated accessibility testing
@@ -90,6 +100,7 @@ nav_order: 4
 - [Deque Systems Blog](https://www.deque.com/blog/)
 - [Adrian Roselli Blog](https://adrianroselli.com/)
 - [Scott O'Hara Blog](https://www.scottohara.me/)
+- [24 Accessibility Blog](https://www.24a11y.com/)
 
 
 ## Communities
