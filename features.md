@@ -23,7 +23,7 @@ The table below shows how accessibility features designed for specific users can
 ### **Use sufficient contrast ratios**
 - Make sure text like addresses and balances and non-text meaningful graphics have adequate contrast against backgrounds
     - [WCAG2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 4.5:1 for regular text and 3:1 for large bolded text(at least 14pt + bold or 18pt+). ([SC 1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum))
-    - [APCA](https://www.myndex.com/APCA/) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
+    - [APCA](https://github.com/myndex) Lightness contrast (Lc) 60+ for most text measured across both font size and weight
     
 
 ### **Don't rely solely on color to convey information**

@@ -12,7 +12,7 @@ nav_order: 4
 - [Accessible Design Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/) - Key concepts from W3C
 - [Bitcoin Design Guide - Accessibility](https://bitcoin.design/guide/designing-products/accessibility/) - Community resource for Bitcoin UX
 - [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) - Accessible Rich Internt Applications
-- [APCA](https://www.myndex.com/APCA/) - Accessible Perceptual Contrast Algorithm
+- [APCA](https://github.com/myndex) - Accessible Perceptual Contrast Algorithm
 - [EN 301-549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) - Accessibility requirements for ICT products and services
 - [ISO 9241-171](https://www.iso.org/standard/39080.html) - Ergonomics of human-system interaction Part 171: Guidance on software accessibility
 
