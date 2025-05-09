@@ -77,5 +77,10 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
 
 ---
 
+## Designathon Workshop Kickoff Presentation
+
+- [Designing for The Edges](https://speakerdeck.com/rrbtc/designing-for-the-edges-accessibility-resources-for-designers-and-developers)
+- [Screen Reader Demo Video](https://www.youtube.com/watch?v=QR8A2jjbYhE)
+
 [Get Started with Core Principles →](principles.html)
 
