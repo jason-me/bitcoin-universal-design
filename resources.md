@@ -15,7 +15,7 @@ nav_order: 4
 - [APCA](https://github.com/myndex) - Accessible Perceptual Contrast Algorithm
 - [EN 301-549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) - Accessibility requirements for ICT products and services
 - [ISO 9241-171](https://www.iso.org/standard/39080.html) - Ergonomics of human-system interaction Part 171: Guidance on software accessibility
-
+- [QT Accessibility](https://doc.qt.io/qt-6/accessible.html) - Documentation for developing accessible QT apps, like Bitcoin Core's QT User Interface
 
 ## Accessible Design Pattern Examples
 
