@@ -123,7 +123,7 @@ nav_order: 4
 
 - [Hocus Focus](https://jekyll-themes.com/hteumeuleu/hocus-focus) - A keyboard navigation horror game that teaches accessibility through challenge
 - [The Accessibility Maze](https://games.de.torontomu.ca/amaze/#/) - A simulation game where you navigate the web with different disabilities
-
+- [Flex Box Froggy](https://flexboxfroggy.com/) - A CSS game to learn flexbox behavior for responsive design
 
 ## Licensing Notes
 
