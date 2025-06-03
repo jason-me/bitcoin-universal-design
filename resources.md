@@ -86,6 +86,9 @@ nav_order: 4
 - [HTML_CodeSniffer (BSD License)](https://squizlabs.github.io/HTML_CodeSniffer/) - Client-side script for identifying WCAG violations in HTML
 - [The A11y Machine (MIT License)](https://github.com/liip/TheA11yMachine) - Automated tool that crawls websites and checks them for accessibility issues
 
+### AI Testing Tools
+
+- [AI Model Accessibility Checker (AIMAC)](https://github.com/GAAD-Foundation/AIMAC) - Open Source tool to evaluate accessibility of LLM generated code
 
 ## Bitcoin-Specific Resources
 
