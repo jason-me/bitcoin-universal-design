@@ -28,7 +28,7 @@ Information and interface operation must be understandable to all users. Content
 ### [Robust](https://www.w3.org/TR/WCAG22/#robust)
 Content must be robust enough to be reliably interpreted by a wide range of user agents and assistive technologies, both current and future. This requires clean code that follows standards and is compatible with evolving tools and technologies.
 
-These principles align perfectly with Bitcoin design needs - creating interfaces that all users can perceive, operate, understand, and access using diverse tools.
+These principles align well with Bitcoin design needs - creating interfaces that all users can perceive, operate, understand, and access using diverse tools.
 
 ## Security Through Accessibility
 
