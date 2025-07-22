@@ -76,7 +76,8 @@ This guide offers practical ways to apply accessibility principles to Bitcoin ap
 </table>
 
 ### Know someone with a disability who uses AT?
-Send them to our [Bitcoin Wallet Digital Accessibily Survey](https://rrbtctx2.limesurvey.net/738485)
+Invite them to take our [Bitcoin Wallet Digital Accessibily Survey](https://rrbtctx2.limesurvey.net/738485)
+
 ---
 
 ## Designathon Workshop Kickoff Presentation
