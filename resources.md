@@ -22,6 +22,7 @@ nav_order: 4
 - [WAI ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) -  Design Patterns and Examples 
 - [Scott O'Hara Code Abode](https://www.scottohara.me/code/) - Curated list of Accessibile Components, Styles, etc.
 - [shadcn/ui](https://ui.shadcn.com/) - Accessible component library for React built on Radix with support for Tailwind CSS
+- [Bitcoin UI](https://bitcoinui.org/) - A modern, accessible React component library for Bitcoin applications, built with TypeScript.
 
 ## Assistive Technologies to Be Aware Of
 
